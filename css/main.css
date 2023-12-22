@@ -1,10 +1,9 @@
 
 body {
-    font-family: "Century Gothic", 'Lato', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 a {
     text-decoration: none;
-    font-family: "Lucida Console", "Courier New", monospace;
 }
 .et-slide {
     display: flex;
@@ -42,7 +41,6 @@ a {
 }
 .et-hero-tabs-container--top {
     position: fixed;
-    height: 50px;
     top: 0;
     background-color: transparent;
 }
@@ -76,11 +74,12 @@ a {
     top: -300px;
     box-shadow: 0 1em 2em -1em rgba(255, 255, 255, 0.5);
     transition: all 0.5s;
-    border-radius: 50% 50% 50% 0;
+    border-radius: 25% 25% 25% 0;
+    opacity: 0.8;
 } 
 .et-hero-tabs-container--top .profil-tab{
     width: 100px;
-    top: 50px;
+    top: 70px;
     border-radius: 0 50% 50% 50%;
 }
 @media (max-width: 991px) {
@@ -90,7 +89,7 @@ a {
     }
     .et-hero-tabs-container--top .profil-tab{
         width: 100px;
-        top: 50px;
+        top: 70px;
     }
 }
 @media (max-width: 768px){

@@ -142,7 +142,6 @@
     transform: translate3d(-50%, -50%, 0);
     z-index: 99;
     text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
     background-color: rgba(0, 0, 0, 0.5);
     color: yellow;
     box-shadow: 0 1em 2em -1em rgba(255, 255, 255, 0.5);
@@ -187,12 +186,13 @@
 }
 @media (max-width: 767px){
     .welcome {
-        width: 170px;
+        width: 200px;
         left: 50%;
         top: 30%;
+        font-size: 1.3em;
     }
     .btn-profil{
         top: 60%;
-        left: 25%;
+        left: 22%;
     }
 }
