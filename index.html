@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 <body>
       <!-- Hero -->
   <section id="accueil" class="et-hero-tabs">
-    <h1 class="welcome"><small>Bonjour..! je m'appelle</small> Mohamed Hedi Sekma <small>Développeur Web<br>Full-Stack</small></h1> 
-    <a class="btn-profil" href="file/HediCv.pdf" target="_blank">Voir Mon CV..!</a>
-    <!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
 
+    <div class="presentation">
+      <h1 class="welcome"><small>Bonjour..! je m'appelle</small> Mohamed Hedi Sekma <small>Développeur Web<br>Full-Stack</small></h1> 
+      <a class="btn-profil" href="file/HediCv.pdf" target="_blank">Voir Mon CV..!</a>
+    </div>
+
+    <div class="social-media">
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-solid fa-envelope"></i></a>
+      <a href=""><i class="fa-solid fa-phone"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+    </div>
+   
     <div class="slideshow">
         
         <div class="slideshow-image" style="background-image: url('img/wd1.jpg')"></div>
@@ -23,7 +35,7 @@
         <div class="slideshow-image" style="background-image: url('img/wd4.jpg')"></div>
     </div>
     <div class="et-hero-tabs-container">
-      <img class="profil-tab" src="img/profil.jpg" alt="profil">
+      <img class="profil-tab" src="img/profil.png" alt="profil">
       <a class="et-hero-tab" href="#accueil">Accueil</a>
       <a class="et-hero-tab" href="#profil">Profil</a>
       <a class="et-hero-tab" href="#competences">Compétences</a>
@@ -39,11 +51,11 @@
       <h1>Profil</h1>
       <h3>something about profil</h3>
     </section>
-    <section class="et-slide" id="competences">
+    <section class="et-slide" style="height: 1200px; background-color: aliceblue;" id="competences">
       <h1>Compétences</h1>
       <h3>something about compétences</h3>
     </section>
-    <section class="et-slide" id="portfolio">
+    <section class="et-slide" style="height: 2200px; background-color: rgb(12, 88, 0);" id="portfolio">
       <h1>Portfolio</h1>
       <h3>something about portfolio</h3>
     </section>
