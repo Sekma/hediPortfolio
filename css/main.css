@@ -1,4 +1,6 @@
-
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -10,29 +12,56 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     position: relative;
     background: #0a192f;
     color: #fff;
     text-align: center;
-   /*  padding: 0 2em; */
+    padding: 0 8em;
 }
-/* .et-hero-tabs h1, .et-slide h1 {
+ .et-slide h1 {
     font-size: 2rem;
-    margin: 0;
-    letter-spacing: 1rem;
+    margin: 2em 0;
+    letter-spacing: 0.5rem;
 }
-.et-hero-tabs h3, .et-slide h3 {
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    opacity: 0.6;
-} */
+.et-slide h3{
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    opacity: 0.7;
+} 
+.et-slide h3 span{
+    color: yellow;
+}
+.et-slide .fixed-background{
+    height: 10rem;
+    width: 100vw;
+    margin-top: 2rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.et-slide .fixed-background::before {
+    content: ' ';
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #0a192f;;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
 .et-hero-tabs-container {
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.5);
@@ -42,7 +71,7 @@ a {
 .et-hero-tabs-container--top {
     position: fixed;
     top: 0;
-    background-color: transparent;
+    background-color: #0a192f;
 }
 .et-hero-tab {
     display: flex;
@@ -68,41 +97,58 @@ a {
     transition: left 0.3s ease;
 }
 
+
+/* photo de profil et logo */
 .et-hero-tabs-container .profil-tab{
     position: absolute;
     width: 250px;
     top: -250px;
     box-shadow: 0 1em 2em -1em rgba(255, 255, 255, 0.5);
     transition: all 0.5s;
-   
     opacity: 0.8;
 } 
-.et-hero-tabs-container--top .profil-tab{
-    width: 150px;
-    top: 70px;
-    border-radius: 0 50% 50% 50%;
+.et-hero-tabs-container .logo-tab{
+    position: absolute;
+    width: 8rem;
+    top: 100px;
+    border-radius: 50%;
 }
 @media (max-width: 991px) {
+    .et-slide{
+        padding: 0 6.5rem;
+    }
     .et-hero-tabs-container .profil-tab{
         width: 200px;
         top: -200px;
     }
-    .et-hero-tabs-container--top .profil-tab{
-        width: 150px;
-        top: 70px;
+    .et-hero-tabs-container .logo-tab{
+        width: 6.5rem;
     }
 }
 @media (max-width: 768px){
+    .et-slide{
+        padding: 0 1.5rem;
+    }
     .et-hero-tabs-container .profil-tab{
         width: 150px;
         top: -150px;
     }
-    .et-hero-tabs-container--top .profil-tab{
-        width: 100px;
-        top: 70px;
+    .et-hero-tabs-container .logo-tab{
+        width: 4rem;
+        top: 4.1rem;
     }
     .et-hero-tab {
         font-size: 0.7rem;
         letter-spacing: 0rem;
    }
+    .et-slide h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    }
+    .et-slide h3{
+        font-size: 1rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem;
+        opacity: 0.7;
+    } 
 }
