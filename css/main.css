@@ -7,55 +7,9 @@ body {
 a {
     text-decoration: none;
 }
-.et-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: #0a192f;
-    color: #fff;
-    text-align: center;
-    padding: 0 8em;
-}
- .et-slide h1 {
-    font-size: 2rem;
-    margin: 2em 0;
-    letter-spacing: 0.5rem;
-}
-.et-slide h3{
-    font-size: 1.2rem;
-    text-align: justify;
-    letter-spacing: 0.1rem;
-    line-height: 1.7rem;
-    opacity: 0.7;
-} 
-.et-slide h3 span{
-    color: yellow;
-}
-.et-slide .fixed-background{
-    height: 10rem;
-    width: 100vw;
-    margin-top: 2rem;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-}
-.et-slide .fixed-background::before {
-    content: ' ';
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background-color: #0a192f;;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }
+
+/* navbar */
+
 .et-hero-tabs-container {
     display: flex;
     flex-direction: row;
@@ -103,7 +57,6 @@ a {
     position: absolute;
     width: 250px;
     top: -250px;
-    box-shadow: 0 1em 2em -1em rgba(255, 255, 255, 0.5);
     transition: all 0.5s;
     opacity: 0.8;
 } 
@@ -113,6 +66,180 @@ a {
     top: 100px;
     border-radius: 50%;
 }
+
+/* main */
+
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #0a192f;
+    color: #fff;
+    text-align: center;
+    padding: 0 8em;
+}
+ .et-slide h1 {
+    font-size: 2rem;
+    margin: 2em 0;
+    letter-spacing: 0.5rem;
+}
+.et-slide h3{
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    opacity: 0.7;
+} 
+.et-slide h3 span{
+    color: yellow;
+}
+.et-slide h2{
+    letter-spacing: 0.3rem;
+    margin: 2em 0;
+    opacity: 0.7;
+}
+.et-slide .fixed-background{
+    height: 10rem;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.et-slide .fixed-background::before {
+    content: ' ';
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #0a192f;;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  /*   background-color: #1E1E1E; */
+   /* color: #007ACC; */
+    /* color: #43A047; */
+
+  /* Expériences Professionnelles */
+  .et-slide#experiences .experiences .experience{
+    width: 30%;
+}
+  .et-slide#experiences .experiences .entreprise{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.et-slide#experiences .experiences .entreprise img{
+    opacity: 0.8;
+    width: 90px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 25%;
+    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
+  }
+  .et-slide#experiences .experiences h3{
+    text-align: start;
+    color: #D7BA7D;
+    opacity: 1;
+  }
+  .et-slide#experiences .experiences .entreprise h5{
+    opacity: 0.8;
+    text-align: justify;
+  }
+
+  /* Compétences Techniques */
+  .et-slide#competences{
+    background-color: #1E1E1E;
+  }
+.et-slide .frontend{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+  }
+.et-slide .backend, .et-slide .outils, .et-slide .soft-skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    justify-content: space-around;
+  }
+  .et-slide .frontend, .et-slide .backend, .et-slide .outils{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil{
+    width: 33%;
+  }
+.et-slide .technologies{
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.et-slide#competences h1{
+    margin-bottom: 0;
+}
+.et-slide#competences h2{
+    opacity: 1;
+    color: #FFEB3B;
+}
+.et-slide#competences h3{
+    opacity: 1;
+    text-align: center;
+    color: #007ACC;
+}
+.et-slide#competences h5{
+    opacity: 0.8;
+    text-align: center;
+    line-height: 1rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+.et-slide#competences .frontend h5, .et-slide#competences .backend h5, .et-slide#competences .outils h5{
+    color: #43A047;
+}
+.et-slide#competences .technologies img{
+    width: 90px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 25%;
+    opacity: 0.9;
+    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
+  }
+
+
+/* soft skills */
+.et-slide .soft-skills .outil{
+    width: 30%;
+}
+  .et-slide#competences .soft-skills .technologies{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.et-slide#competences .soft-skills .technologies img{
+    opacity: 0.7;
+    width: 60px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 25%;
+    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
+  }
+  .et-slide#competences .soft-skills h3{
+    text-align: start;
+  }
+  .et-slide#competences .soft-skills .technologies h5{
+    padding: 0;
+    text-align: justify;
+  }
+
 @media (max-width: 991px) {
     .et-slide{
         padding: 0 6.5rem;
@@ -123,6 +250,18 @@ a {
     }
     .et-hero-tabs-container .logo-tab{
         width: 6.5rem;
+    }
+     /* Compétences Techniques */
+
+    .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil{
+        width: 50%;
+    }
+    .et-slide .soft-skills .outil{
+        width: 45%;
+    }
+    .et-slide#competences .technologies img, .et-slide#experiences .experiences .entreprise img{
+        padding: 7px;
+        width: 70px;
     }
 }
 @media (max-width: 768px){
@@ -138,9 +277,15 @@ a {
         top: 4.1rem;
     }
     .et-hero-tab {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         letter-spacing: 0rem;
    }
+
+    /* Compétences Techniques */
+
+  .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil, .et-slide .soft-skills .outil{
+    width: 100%;
+}
     .et-slide h1 {
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
@@ -149,6 +294,10 @@ a {
         font-size: 1rem;
         letter-spacing: 0rem;
         line-height: 1.5rem;
-        opacity: 0.7;
     } 
+    .et-slide h2{
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }
+
 }
