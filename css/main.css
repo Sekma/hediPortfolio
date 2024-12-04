@@ -32,13 +32,13 @@ a {
     justify-content: center;
     align-items: center;
     flex: 1;
-    color: rgb(123, 211, 234);
+    color: #9CDCFE;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
    
 }
 .et-hero-tab:hover {
-    color: rgb(167, 49, 33);
+    color: #c16137;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
 }
@@ -123,7 +123,95 @@ a {
     background-size: cover;
   }
 
-  /*   background-color: #1E1E1E; */
+  
+
+  /* Compétences Techniques */
+  .et-slide#competences{
+    background-color: #1E1E1E;
+  }
+  .et-slide#competences .frontend{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+  }
+  .et-slide#competences .frontend .frameworks{
+    margin-bottom: 2rem;
+  }
+  .et-slide#competences .backend, .et-slide#competences .outils, .et-slide#competences .soft-skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+  }
+  .et-slide .frontend, .et-slide .backend, .et-slide .outils{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil, .et-slide .soft-skills .outil{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+.et-slide .technologies{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 10px;
+}
+.et-slide#competences .technologies img{
+    width: 70px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 25%;
+    opacity: 0.8;
+    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
+  }
+.et-slide#competences h1{
+    margin-bottom: 0;
+}
+.et-slide#competences h2{
+    opacity: 1;
+    color: #d7d783;
+}
+.et-slide#competences h3{
+    opacity: 1;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #007ACC;
+}
+.et-slide#competences .frontend h3{
+    text-align: center !important;
+}
+.et-slide#competences h5{
+    opacity: 0.8;
+    line-height: 1rem;
+    text-align: start;
+}
+.et-slide#competences .parenthese{
+    color: #FFEB3B;
+}
+.et-slide#competences .point-virgule{
+    color: white;
+}
+.et-slide#competences .chevron{
+    color: #808080;
+    font-size: larger;
+}
+.et-slide#competences .atribute{
+    color: #9CDCFE;
+}
+.et-slide#competences .value{
+    color: #c16137
+}
+
+.et-slide#competences .frontend h5, .et-slide#competences .backend h5, .et-slide#competences .outils h5{
+    color: #43A047;
+}
+
+
+/*   background-color: #1E1E1E; */
    /* color: #007ACC; */
     /* color: #43A047; */
 
@@ -154,95 +242,11 @@ a {
     text-align: justify;
   }
 
-  /* Compétences Techniques */
-  .et-slide#competences{
-    background-color: #1E1E1E;
-  }
-.et-slide .frontend{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2em;
-  }
-.et-slide .backend, .et-slide .outils, .et-slide .soft-skills{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: start;
-    justify-content: space-around;
-  }
-  .et-slide .frontend, .et-slide .backend, .et-slide .outils{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil{
-    width: 33%;
-  }
-.et-slide .technologies{
-    margin: 1em auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.et-slide#competences h1{
-    margin-bottom: 0;
-}
-.et-slide#competences h2{
-    opacity: 1;
-    color: #FFEB3B;
-}
-.et-slide#competences h3{
-    opacity: 1;
-    text-align: center;
-    color: #007ACC;
-}
-.et-slide#competences h5{
-    opacity: 0.8;
-    text-align: center;
-    line-height: 1rem;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
-}
-.et-slide#competences .frontend h5, .et-slide#competences .backend h5, .et-slide#competences .outils h5{
-    color: #43A047;
-}
-.et-slide#competences .technologies img{
-    width: 90px;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 25%;
-    opacity: 0.9;
-    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
-  }
-
-
-/* soft skills */
-.et-slide .soft-skills .outil{
-    width: 30%;
-}
-  .et-slide#competences .soft-skills .technologies{
-    display: flex;
-    align-items: start;
-    gap: 10px;
-}
-.et-slide#competences .soft-skills .technologies img{
-    opacity: 0.7;
-    width: 60px;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 25%;
-    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
-  }
-  .et-slide#competences .soft-skills h3{
-    text-align: start;
-  }
-  .et-slide#competences .soft-skills .technologies h5{
-    padding: 0;
-    text-align: justify;
-  }
+  
 
 @media (max-width: 991px) {
     .et-slide{
-        padding: 0 6.5rem;
+        padding: 0 1.5rem;
     }
     .et-hero-tabs-container .profil-tab{
         width: 200px;
@@ -251,23 +255,10 @@ a {
     .et-hero-tabs-container .logo-tab{
         width: 6.5rem;
     }
-     /* Compétences Techniques */
-
-    .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil{
-        width: 50%;
-    }
-    .et-slide .soft-skills .outil{
-        width: 45%;
-    }
-    .et-slide#competences .technologies img, .et-slide#experiences .experiences .entreprise img{
-        padding: 7px;
-        width: 70px;
-    }
+     
 }
 @media (max-width: 768px){
-    .et-slide{
-        padding: 0 1.5rem;
-    }
+   
     .et-hero-tabs-container .profil-tab{
         width: 150px;
         top: -150px;
@@ -298,6 +289,10 @@ a {
     .et-slide h2{
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
+    }
+    .et-slide#competences .technologies img, .et-slide#experiences .experiences .entreprise img{
+        padding: 7px;
+        width: 50px;
     }
 
 }
