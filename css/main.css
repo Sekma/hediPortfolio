@@ -255,6 +255,27 @@ a {
     .et-hero-tabs-container .logo-tab{
         width: 6.5rem;
     }
+
+    .et-slide h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        }
+        .et-slide h3{
+            font-size: 1rem;
+            letter-spacing: 0rem;
+            line-height: 1.5rem;
+        } 
+        .et-slide h2{
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+        }
+
+        /* Compétences Techniques */ 
+        
+        .et-slide#competences .technologies img, .et-slide#experiences .experiences .entreprise img{
+            padding: 7px;
+            width: 50px;
+        }
      
 }
 @media (max-width: 768px){
@@ -277,22 +298,5 @@ a {
   .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil, .et-slide .soft-skills .outil{
     width: 100%;
 }
-    .et-slide h1 {
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-    }
-    .et-slide h3{
-        font-size: 1rem;
-        letter-spacing: 0rem;
-        line-height: 1.5rem;
-    } 
-    .et-slide h2{
-        font-size: 1.2rem;
-        letter-spacing: 0.1rem;
-    }
-    .et-slide#competences .technologies img, .et-slide#experiences .experiences .entreprise img{
-        padding: 7px;
-        width: 50px;
-    }
 
 }
