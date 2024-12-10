@@ -1,0 +1,100 @@
+/* Formations et Certifications */
+ .et-slide#experiences .formations{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+  } 
+  .et-slide#experiences .formations .formation-description{
+    width: 50%;
+  }
+  .et-slide#experiences .formations .formation-description .formation{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .et-slide#experiences .formations .formation-description .formation img{
+    width: 150px;
+    background-color: #ffffff;
+    padding: 10px;
+    opacity: 0.8;
+  }
+  .et-slide#experiences .formations .formation-description h2, .et-slide#experiences .formations .certificats h2{
+    text-align: start;
+    line-height: 2rem; 
+    margin: 20px 0;
+    opacity: 1;
+    color: #C586C0;
+  }
+  .et-slide#experiences .formations .formation-description h3{
+    margin: 20px 0;
+  }
+  .et-slide#experiences .formations .certificats{
+    width: 50%;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+  }
+  .et-slide#experiences .formations .certificats h2{
+    width: 100%;
+    text-align: center;
+  }
+  .et-slide#experiences .formations .certificats a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    color: #ffffff;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+    line-height: 1rem;
+    margin: 5px 0;
+  }
+  .et-slide#experiences .formations .certificats img{
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .et-slide#experiences .formations .certificats a span{
+    color: #9CDCFE;
+  }
+  .et-slide#experiences .formations .certificats a:hover{
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  @media (max-width: 991px){
+     /* Formations et Certifications */
+     .et-slide#experiences .formations .formation-description{
+      width: 40%;
+    }
+     .et-slide#experiences .formations .formation-description .formation img{
+        width: 100px;
+        padding: 7px;
+      }
+      .et-slide#experiences .formations .certificats{
+        width: 60%;
+        padding-left: 20px;
+      }
+  }
+  @media (max-width: 767px){
+    /* Formations et Certifications */
+ .et-slide#experiences .formations{
+  flex-direction: column;
+}
+.et-slide#experiences .formations .formation-description{
+ width: 100%;
+}
+.et-slide#experiences .formations .formation-description .formation img{
+  width: 80px;
+}
+.et-slide#experiences .formations .certificats{
+  width: 100%;
+  padding-left: 0;
+}
+.et-slide#experiences .formations .certificats a{
+  width: 45%;
+}
+  }

@@ -121,78 +121,7 @@
     opacity: 0.7;
 }
 
-  
-
-  /*********************************** Compétences Techniques ****************************************/
-  .et-slide#competences{
-    background-color: #1E1E1E;
-  }
-  .et-slide#competences .frontend{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2em;
-  }
-  .et-slide#competences .frontend .frameworks{
-    margin-bottom: 2rem;
-  }
-  .et-slide#competences .backend, .et-slide#competences .outils, .et-slide#competences .soft-skills{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 5%;
-  }
-  .et-slide .frontend, .et-slide .backend, .et-slide .outils{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil, .et-slide .soft-skills .outil{
-    width: 47%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-.et-slide .technologies{
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    gap: 10px;
-}
-.et-slide#competences .soft-skills {
-    padding-bottom: 1rem;
-}
-.et-slide#competences .soft-skills .technologies{
-    margin-bottom: 0 !important;
-}
-.et-slide#competences .technologies img{
-    width: 70px;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 25%;
-    opacity: 0.8;
-    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
-  }
-.et-slide#competences h1{
-    margin-bottom: 0;
-}
-.et-slide#competences h2{
-    opacity: 1;
-    color: #d7d783;
-}
-.et-slide#competences h3{
-    opacity: 1;
-    text-align: start;
-    margin-bottom: 10px;
-    color: #007ACC;
-}
-.et-slide#competences .frontend h3{
-    text-align: center !important;
-}
-.et-slide#competences h5{
-    opacity: 0.8;
-    line-height: 1rem;
-    text-align: start;
-}
+/******************************************** color ***************************************************/
 .parenthese{
     color: #FFEB3B;
 }
@@ -214,118 +143,8 @@
     color: #43A047;
 }
 
-
-/*   background-color: #1E1E1E; */
-   /* color: #007ACC; */
-    /* color: #43A047; */
-
-  /* Expériences Professionnelles */
-  .et-slide#experiences{
-    padding: 0;
-  }
-  .et-slide#experiences .experiences{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-}
-  .et-slide#experiences .experiences .experience{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border-top: 2px solid rgba(128, 128, 128, 0.5);
-    padding-top: 10px;
-}
-.et-slide#experiences .experiences .right-experience{
-    margin-top: 90px;
-    padding-left: 10px;
-    border-left: 1px solid rgba(128, 128, 128, 0.5);
-    border-top-left-radius: 10px;
-}
-.et-slide#experiences .experiences .left-experience{
-    align-items: end;
-    padding-right: 10px;
-    border-right: 2px solid rgba(128, 128, 128, 0.5);
-    border-top-right-radius: 10px;
-    margin-top: -10px;
-}
-  .et-slide#experiences .experiences .entreprise{
-    display: flex;
-    gap: 10px;
-}
-.et-slide#experiences .experiences .entreprise img{
-    opacity: 0.8;
-    width: 70px;
-    height: 70px;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 25%;
-    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
-  }
-  .et-slide#experiences .experiences h3{
-    text-align: start;
-    color: #C586C0;
-    opacity: 1;
-  }
-  .et-slide#experiences .experiences h5{
-    line-height: 1.5rem;
-    text-align: start;
-  }
-
-  /* Formations et Certifications */
-  .et-slide#experiences .formations{
-    width: 80%
-  }
-  .et-slide#experiences .formations .formation{
-    display: flex;
-    align-items: center;
-    gap: 1%;
-  }
-  .et-slide#experiences .formations .certificats{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 1%;
-  }
-  .et-slide#experiences .formations .formation img{
-    width: 150px;
-    background-color: #ffffff;
-    padding: 10px;
-  }
-  .et-slide#experiences .formations .certificats img{
-    width: 90%;
-  }
-  .et-slide#experiences .formations h2{
-    text-align: start; 
-    margin: 20px 0;
-    opacity: 1;
-    color: #C586C0;
-  }
-  .et-slide#experiences .formations h3{
-    margin: 20px 0;
-  }
-  .et-slide#experiences .formations .certificats a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 19%;
-    color: #ffffff;
-    opacity: 0.7;
-    transition: all 0.5s ease;
-    line-height: 1rem;
-    margin: 5px 0;
-  }
-  .et-slide#experiences .formations .certificats a span{
-    color: #9CDCFE;
-  }
-  .et-slide#experiences .formations .certificats a:hover{
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
 @media (max-width: 991px) {
-    .et-slide, .et-slide#competences{
+    .et-slide{
         padding: 0 1.5rem;
     }
     .et-hero-tabs-container .profil-tab{
@@ -348,34 +167,9 @@
         .et-slide h2{
             font-size: 1.2rem;
             letter-spacing: 0.1rem;
-        }
-
-        /* Compétences Techniques */ 
-
-        .et-slide#competences .technologies img, .et-slide#experiences .experiences .entreprise img{
-            padding: 7px;
-            width: 50px;
-            height: 50px;
-        }
-
-        /* Expériences Professionnelles */
-        .et-slide#experiences .formations{
-            width: 95%
-        }
-        .et-slide#experiences .experiences .entreprise h5{
-            line-height: 1rem;
-        }
-
-         /* Formations et Certifications */
-         .et-slide#experiences .formations .formation img{
-            width: 100px;
-            padding: 7px;
-          }
-          .et-slide#experiences .formations .certificats a{
-            width: 24%;
-          }
+        }  
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
    
     .et-hero-tabs-container .profil-tab{
         width: 150px;
@@ -389,41 +183,4 @@
         font-size: 0.6rem;
         letter-spacing: 0rem;
    }
-
-    /* Compétences Techniques */
-
-  .et-slide .backend .languages, .et-slide .backend .frameworks, .et-slide .backend .database, .et-slide .outils .outil, .et-slide .soft-skills .outil, .et-slide#experiences .experiences .experience{
-    width: 100%;
-}
-
-/* Expériences Professionnelles */
-.et-slide#experiences{
-    padding: 0 1.5rem;
-}
-.et-slide#experiences .experiences .experience{
-    margin-bottom: 1.5rem;
-    border-top: none;
-    padding-top: 0;
-}
-.et-slide#experiences .experiences .right-experience{
-    margin-top: 0;
-    padding-left: 0;
-    border-left: none;
-}
-.et-slide#experiences .experiences .left-experience{
-    align-items: start;
-    padding-right: 0;
-    border-right: none;
-    margin-top: 0;
-}
- /* Expériences Professionnelles */
- .et-slide#experiences .formations{
-    width: 100%
-}
-.et-slide#experiences .formations .formation img{
-    width: 80px;
-  }
-  .et-slide#experiences .formations .certificats a{
-    width: 49%;
-  }
 }

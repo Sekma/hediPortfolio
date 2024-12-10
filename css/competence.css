@@ -1,0 +1,90 @@
+/*********************************** Compétences Techniques ****************************************/
+.et-slide#competences{
+  background-image: linear-gradient(0deg, #0a192f 0%, #1E1E1E  15%, #1E1E1E  85%, #0a192f  100%);
+   /*  background-color: #1E1E1E; */
+  }
+  .et-slide#competences h1{
+      margin-bottom: 0;
+  }
+  .et-slide#competences h2{
+      opacity: 1;
+      color: #d7d783;
+  }
+  .et-slide#competences h3{
+      opacity: 1;
+      text-align: start;
+      margin-bottom: 10px;
+      color: #007ACC;
+  }
+  .et-slide#competences h5{
+      opacity: 0.8;
+      line-height: 1rem;
+      text-align: start;
+  }
+  .et-slide#competences .frontend{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+  }
+  .et-slide#competences .frontend h3{
+      text-align: center !important;
+  }
+  .et-slide#competences .frontend .frameworks{
+    margin-bottom: 2rem;
+  }
+  .et-slide#competences .backend, .et-slide#competences .outils, .et-slide#competences .soft-skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+  }
+  .et-slide#competences .frontend, .et-slide#competences .backend, .et-slide#competences .outils{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .et-slide#competences .backend .languages, .et-slide#competences .backend .frameworks, .et-slide#competences .backend .database, .et-slide#competences .outils .outil, .et-slide#competences .soft-skills .outil{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+.et-slide#competences .technologies{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: 10px;
+}
+
+  .et-slide#competences .soft-skills {
+    padding-bottom: 1rem;
+}
+.et-slide#competences .soft-skills .technologies{
+    margin-bottom: 0 !important;
+}
+.et-slide#competences .technologies img{
+    width: 70px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 25%;
+    opacity: 0.8;
+    box-shadow: -0.3em 0.3em 0.5em 0 rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 991px) {
+        /* Compétences Techniques */ 
+        .et-slide#competences{
+            padding: 0 1.5rem;
+        }
+        .et-slide#competences .technologies img{
+            padding: 7px;
+            width: 50px;
+            height: 50px;
+        }
+}
+@media (max-width: 767px){
+        /* Compétences Techniques */
+        .et-slide#competences .backend .languages, .et-slide#competences .backend .frameworks, .et-slide#competences .backend .database, .et-slide#competences .outils .outil, .et-slide#competences .soft-skills .outil{
+        width: 100%;
+    }
+}
