@@ -251,17 +251,21 @@ a {
 }
 
 @media (max-width: 991px){
+    .presentation{
+        left: 10%;
+        width: 80%;
+    }
     .social-media a{
         display: none;
     }
 }
 @media (max-width: 767px){
     .presentation h1{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 1.4rem;
     }
     .presentation h2{
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 1rem;
     }
     .presentation, .btn-profil{
