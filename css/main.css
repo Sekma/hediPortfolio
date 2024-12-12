@@ -85,7 +85,7 @@
 } 
 
 /****************************************** fixed background **************************************/
-.et-slide .fixed-background{
+.fixed-background{
     height: 10rem;
     width: 100vw;
     background-attachment: fixed;
@@ -93,7 +93,7 @@
     background-size: cover;
     background-position-x: center;
 }
-.et-slide .fixed-background::before {
+.fixed-background::before {
     content: ' ';
     display: block;
     position: relative;
@@ -146,6 +146,10 @@
 @media (max-width: 991px) {
     .et-slide{
         padding: 0 1.5rem;
+    }
+    .et-hero-tab:hover {
+        color: #9CDCFE;
+        background-color: rgba(0, 0, 0, 0);
     }
     .et-hero-tabs-container .profil-tab{
         width: 200px;
