@@ -160,26 +160,32 @@ a {
     left: 20%;
     box-shadow: 0 1em 2em -1em rgba(255, 255, 255, 0.5);
 }
- .welcome {
+ .presentation h1 {
     text-align: center;
     border-radius: 5px;
     color: #FFEB3B;
     padding: 1em 2em;
-    line-height: 1.5;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
 }
-.welcome small {
+.presentation h1 small{
     display: block;
-    /* font-size: 0.7em; */
-    line-height: 1.5;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     color: #ffffff;
 }
-.welcome small:first-child {
+.presentation h2{
+    text-align: center;
+    width: 90%;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.8;
+    line-height: 1.7rem;
+}
+.presentation h1 small:first-child {
     border-bottom: 1px solid rgba(0, 0, 0, .25);
     padding-bottom: 0.5em;
 }
-.welcome small:last-child {
+.presentation h1 small:last-child {
     border-top: 1px solid rgba(0, 0, 0, .25);
     padding-top: 0.5em;
 }
@@ -187,7 +193,7 @@ a {
 /****************************** boutton cv **************************************************/
 .btn-profil {
   margin: 10px;
-  padding: 15px 30px;
+  padding: 12px 25px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -245,6 +251,17 @@ a {
 
 
 @media (max-width: 767px){
+    .presentation h1{
+        font-size: 1rem;
+    }
+    .presentation h2{
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+    .presentation, .btn-profil{
+        font-size: 0.7rem;
+        padding: 8px 15px;
+    }
     .social-media a{
         display: none;
     }
