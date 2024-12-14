@@ -73,3 +73,18 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
+
+
+
+const scrollContainer = document.querySelector('.horizontal-scroll');
+const scrollLeft = document.querySelector('.scroll-left');
+const scrollRight = document.querySelector('.scroll-right');
+
+scrollLeft.addEventListener('click', () => {
+  scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+scrollRight.addEventListener('click', () => {
+  scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+});
