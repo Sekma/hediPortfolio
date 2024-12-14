@@ -78,13 +78,38 @@ new StickyNavigation();
 
 
 const scrollContainer = document.querySelector('.horizontal-scroll');
-const scrollLeft = document.querySelector('.scroll-left');
-const scrollRight = document.querySelector('.scroll-right');
+const btnLeft = document.querySelector('.scroll-left');
+const btnRight = document.querySelector('.scroll-right');
 
-scrollLeft.addEventListener('click', () => {
-  scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+// Défilement avec les boutons
+btnLeft.addEventListener('click', () => {
+  scrollContainer.scrollBy({
+    left: -200, // Défilement vers la gauche
+    behavior: 'smooth',
+  });
 });
 
-scrollRight.addEventListener('click', () => {
-  scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+btnRight.addEventListener('click', () => {
+  scrollContainer.scrollBy({
+    left: 200, // Défilement vers la droite
+    behavior: 'smooth',
+  });
 });
+
+// Permettre le défilement tactile sur mobile
+scrollContainer.addEventListener('touchstart', (e) => {
+  scrollContainer.dataset.startX = e.touches[0].clientX; // Enregistrer la position initiale
+  scrollContainer.dataset.scrollLeft = scrollContainer.scrollLeft;
+});
+
+scrollContainer.addEventListener('touchmove', (e) => {
+  if (!scrollContainer.dataset.startX) return; // Ignorer si pas de position initiale
+  const dx = e.touches[0].clientX - scrollContainer.dataset.startX;
+  scrollContainer.scrollLeft = scrollContainer.dataset.scrollLeft - dx; // Ajuster la position du défilement
+});
+
+scrollContainer.addEventListener('touchend', () => {
+  delete scrollContainer.dataset.startX; // Réinitialiser
+  delete scrollContainer.dataset.scrollLeft;
+});
+

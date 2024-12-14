@@ -1,86 +1,70 @@
-/*  .et-slide#portfolio {
-  padding: 0 8em;
-  } 
-   */
-  .horizontal-scroll {
-    width: 100%;
-    display: flex;
-    overflow-x: auto;
-    gap: 20px; /* Espacement entre les projets */
-    padding: 20px; /* Défilement fluide */
-  }
-  
+/* Conteneur défilable horizontal */
+.horizontal-scroll {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Permet le défilement horizontal */
+  scroll-behavior: smooth; /* Défilement fluide */
+  -webkit-overflow-scrolling: touch; /* Défilement tactile fluide */
+  white-space: nowrap; /* Empêche les éléments de passer à la ligne */
+  position: relative;
+  padding: 20px;
+}
+
+/* Masquer la barre de défilement */
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Projets */
+.project {
+  width: 45%;
+  flex-shrink: 0;
+  background: #1E1E1E;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Boutons de défilement */
+.scroll-buttons {
+  z-index: 1;
+  padding: 50px;
+  position: absolute;
+  top: 50%; /* Centre verticalement */
+  transform: translateY(-50%); /* Ajustement pour centrer précisément */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Boutons à gauche et à droite */
+}
+
+.scroll-buttons button {
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #9CDCFE;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.scroll-buttons button:hover {
+  color: #c16137;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive : ajuster la largeur des projets */
+@media (max-width: 767px) {
   .project {
-    width: 30%;
-    /* min-width: 300px; */ /* Largeur minimale de chaque projet */
-    flex-shrink: 0; /* Empêche les projets de se réduire */
-    background: #1E1E1E; 
-    /* border: 1px solid #ddd; */
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
-    text-align: center;
-    transition: all 0.5;
+    width: 90%;
   }
-
-  
-  
-  .project img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .project h2 {
-    font-size: 1.2em;
-    margin: 10px;
-  }
-  
-  .project p {
-    font-size: 0.9em;
-    color: #666;
-  }
-  
-
-
-  .scroll-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-  }
-  
-  .scroll-buttons button {
-    background: #1E1E1E;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
-  }
-  
-  .scroll-buttons button:hover {
-    background: rgb(20, 20, 20);
-  }
-
-
-
-
-  /* Appliquer uniquement au conteneur horizontal */
-  .horizontal-scroll {
-    overflow-x: hidden; /* Cache la scrollbar horizontale */
-    white-space: nowrap; /* Empêche les éléments de passer à la ligne suivante */
-  }
-  
-  @media (max-width: 991px){
-    .project{
-      width: 50%;
-    }
-  }
-  @media (max-width: 767px){
-    .project{
-      width: 100%;
-    }
-  }
+}
