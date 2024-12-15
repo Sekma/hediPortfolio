@@ -157,6 +157,8 @@
   .project p {
     width: 80%;
     font-size: 0.7em;
+  }.scroll-buttons {
+    padding: 0;
   }
 }
 
