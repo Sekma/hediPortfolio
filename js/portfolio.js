@@ -1,3 +1,6 @@
+
+////////////////////// Boutons de navigation /////////////////////
+
 // Sélection des éléments
 function scroll(part){
     const scrollContainer = document.querySelector('.horizontal-scroll'+part);
@@ -41,3 +44,28 @@ scroll('-part-1');
 scroll('-part-2');
 scroll('-part-3');
 scroll('-part-4');
+
+////////////////////////// vidéo //////////////////////
+
+// Sélection des éléments
+const thumbnails = document.querySelectorAll('.video-thumbnail');
+const modal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const closeModal = document.querySelector('.close-modal');
+
+// Fonction pour ouvrir la vidéo en plein écran
+thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+        const videoSrc = thumbnail.dataset.video; // Récupérer la source de la vidéo
+        modalVideo.querySelector('source').src = videoSrc; // Définir la source de la vidéo
+        modalVideo.load(); // Recharger la vidéo avec la nouvelle source
+        modal.style.display = 'flex'; // Afficher le modal
+    });
+});
+
+// Fonction pour fermer la modale
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalVideo.pause(); // Arrêter la vidéo
+    modalVideo.querySelector('source').src = ''; // Réinitialiser la source
+});
