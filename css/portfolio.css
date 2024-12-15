@@ -1,11 +1,13 @@
 
 /*********************************** Conteneur défilable horizontal *******************************/
-
+.et-slide#portfolio h3{
+ margin-bottom: 2em;
+}
 .horizontal-scroll {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: start;
+  gap: 25px;
   overflow-x: auto; /* Activer le défilement horizontal */
   scroll-behavior: smooth; /* Défilement fluide */
   white-space: nowrap; /* Empêche les éléments de passer à la ligne */
