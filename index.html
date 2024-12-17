@@ -402,6 +402,17 @@
         <h1>Mon Portfolio</h1>
         <h3>Explorez une sélection de projets réalisés au cours de ma formation. Ces travaux illustrent les compétences techniques et créatives que j’ai acquises.</h3>
         
+        
+          <!-- Modale pour les vidéos -->
+          <div class="video-modal" id="videoModal">
+            <video id="modalVideo" controls autoplay>
+                <source src="" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+            </video>
+            <button class="close-modal">&times;</button>
+          </div>
+        
+        <h2 class="project-title">Projets Full-Stack<br><span>Laravel & Vue.js</span></h2>
         <div class="horizontal-scroll horizontal-scroll-part-1">
           <div class="project">
             <img src="img/projects/bigscreen.jpeg" alt="Aperçu du Projet 2">
@@ -423,28 +434,21 @@
           <button class="scroll-right">▶</button>
         </div>
 
-          <!-- Modale pour la vidéo -->
-          <div class="video-modal" id="videoModal">
-            <video id="modalVideo" controls autoplay>
-                <source src="" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-            </video>
-            <button class="close-modal">&times;</button>
-          </div>
+        <h2 class="project-title">Projets Full-Stack<br><span>Laravel</span></h2>
         <div class="horizontal-scroll horizontal-scroll-part-2">
           <div class="project">
-            <img src="img/projects/tiz.jpeg" alt="Aperçu du Projet 1">
+            <img src="img/projects/weFashion.jpeg" alt="Aperçu du Projet 1">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet Laravel</h2>
-            <p>Démonstration ▶</p>
+            <p class="video-thumbnail" data-video="video/wefashion.mp4">Démonstration ▶</p>
           </div>
           <div class="project">
-            <img src="img/projects/street-art.jpeg" alt="Aperçu du Projet 2">
+            <img src="img/projects/book.jpeg" alt="Aperçu du Projet 2">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet Vue.js</h2>
-            <p>Démonstration ▶.</p>
+            <p class="video-thumbnail" data-video="video/book.mp4">Démonstration ▶</p>
           </div>
         </div>
         <div class="scroll-buttons scroll-buttons-part-2">
@@ -452,55 +456,35 @@
           <button class="scroll-right">▶</button>
         </div>
 
+        <h2 class="project-title">Projets Front-End Avancé<br><span>HTML/CSS/JavaScript</span></h2>
         <div class="horizontal-scroll horizontal-scroll-part-3">
           <div class="project">
             <img src="img/projects/portfolio.jpeg" alt="Aperçu du Projet 1">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet Laravel</h2>
-            <p>Démonstration ▶</p>
+            <p>Vous êtes ici</p>
           </div>
           <div class="project">
             <img src="img/projects/kwick.jpeg" alt="Aperçu du Projet 2">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet Vue.js</h2>
-            <p>Démonstration ▶</p>
-          </div>
-          <div class="project">
-            <img src="img/projects/chariot.jpeg" alt="Aperçu du Projet 3">
-            <div class="support-1"></div>
-            <div class="support-2"></div>
-            <h2>Projet React</h2>
-            <p>Démonstration ▶</p>
-          </div>
-          <div class="project">
-            <img src="img/projects/portfolioHiba.jpeg" alt="Aperçu du Projet 3">
-            <div class="support-1"></div>
-            <div class="support-2"></div>
-            <h2>Projet React</h2>
-            <p>Démonstration ▶</p>
+            <p><a target="_blank" href="https://sekma.github.io/kwick">Démonstration ▶</a></p>
           </div>
           <div class="project">
             <img src="img/projects/clementine.jpeg" alt="Aperçu du Projet 3">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet React</h2>
-            <p>Démonstration ▶</p>
+            <p><a target="_blank" href="https://sekma.github.io/clementine">Démonstration ▶</a></p>
           </div>
           <div class="project">
-            <img src="img/projects/ibsol.jpeg" alt="Aperçu du Projet 3">
+            <img src="img/projects/portfolioHiba.jpeg" alt="Aperçu du Projet 3">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet React</h2>
-            <p>Démonstration ▶</p>
-          </div>
-          <div class="project">
-            <img src="img/projects/sastra.jpeg" alt="Aperçu du Projet 3">
-            <div class="support-1"></div>
-            <div class="support-2"></div>
-            <h2>Projet React</h2>
-            <p>Démonstration ▶</p>
+            <p><a target="_blank" href="https://sekma.github.io/HibaPortfolio">Démonstration ▶</a></p>
           </div>
         </div>
         <div class="scroll-buttons scroll-buttons-part-3">
@@ -508,27 +492,28 @@
           <button class="scroll-right">▶</button>
         </div>
 
+        <h2 class="project-title">Projets Front-End Essentiel<br><span>HTML & CSS</span></h2>
         <div class="horizontal-scroll horizontal-scroll-part-4">
           <div class="project">
             <img src="img/projects/tiz.jpeg" alt="Aperçu du Projet 1">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet Laravel</h2>
-            <p>Démonstration ▶</p>
+            <p><a target="_blank" href="https://sekma.github.io/tiz">Démonstration ▶</a></p>
           </div>
           <div class="project">
             <img src="img/projects/street-art.jpeg" alt="Aperçu du Projet 2">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet Vue.js</h2>
-            <p>Démonstration ▶</p>
+            <p><a target="_blank" href="https://sekma.github.io/street-art">Démonstration ▶</a></p>
           </div>
           <div class="project">
             <img src="img/projects/musee.jpeg" alt="Aperçu du Projet 3">
             <div class="support-1"></div>
             <div class="support-2"></div>
             <h2>Projet React</h2>
-            <p>Démonstration ▶</p>
+            <p><a target="_blank" href="https://sekma.github.io/musee-virtuel">Démonstration ▶</a></p>
           </div>
         </div>
         <div class="scroll-buttons scroll-buttons-part-4">
