@@ -17,29 +17,24 @@
   display: flex;
   justify-content: start;
   gap: 25px;
-  overflow-x: auto; /* Activer le défilement horizontal */
-  scroll-behavior: smooth; /* Défilement fluide */
-  white-space: nowrap; /* Empêche les éléments de passer à la ligne */
+  overflow-x: auto;
+  scroll-behavior: smooth;
   padding: 20px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 /* Masquer la barre de défilement */
 .horizontal-scroll::-webkit-scrollbar {
   display: none; /* Masque la scrollbar */
 }
-.horizontal-scroll h2{
-  opacity: 1;
-  font-size: 1.2em;
-  margin: 2em auto;
-}
 /* Style des projets */
 .project {
   flex-shrink: 0;
-  width: 450px; /* Largeur fixe pour chaque projet */
+  width: 100%;
+  max-width: 450px; /* Largeur fixe pour chaque projet */
   border-radius: 10px;
   padding: 15px;
-  text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease;
 }
@@ -66,11 +61,43 @@
   box-shadow: -4px 2px 5px rgba(102, 102, 102, 0.5);
 }
 
+.horizontal-scroll .project h2{
+  color: #FFEB3B;
+  opacity: 0.9;
+  font-size: 1.3em;
+  line-height: 1.5rem;
+  margin: 1.3em auto;
+}
+.horizontal-scroll .project h5{
+  opacity: 0.8;
+  line-height: 1.3rem;
+}
+/********************************************* github-links ***********************************/
+.github-links {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.github-links a {
+  color: #808080;
+  padding: 5px;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.github-links a:hover {
+  color: #9CDCFE;
+}
+/************************************** Boutons de démonstration **********************************/
 .project p {
   border-radius: 5px;
   letter-spacing: 0.1rem;
   padding: 10px 0;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 60%;
   color: #9CDCFE;
   background-color: rgba(0, 0, 0, 0.5);
@@ -87,7 +114,7 @@
 .project p a:hover{
   color: #c16137;
 }
-/************************************** Boutons de navigation *****************************/
+/************************************** Boutons de scroll *****************************/
 .scroll-buttons {
   width: 100%;
   display: flex;
@@ -97,22 +124,23 @@
   transform: translateY(-50%); /* Ajustement pour centrer précisément */
   pointer-events: none; /* Empêche d'interférer avec le contenu */
   position: relative;
-  bottom: 100px;
+  top: 170px;
 }
 .scroll-buttons button {
   pointer-events: all; /* Réactiver l'interaction pour les boutons */
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
   color: #9CDCFE;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 2px #9CDCFE;
   transition: all 0.3s ease;
 }
 
 .scroll-buttons button:hover {
   color: #c16137;
+  box-shadow: 0 2px 2px #c16137;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease;
 }
@@ -167,9 +195,12 @@
   .project img, .project video{
     border-radius: 10px;
   }
-  .project p, .horizontal-scroll h2{
-    width: 80%;
-    font-size: 0.8em;
+  .horizontal-scroll .project h2{
+    font-size: 1em;
+  }
+  .project p, .github-links{
+    font-size: 0.7em;
+    width: 100%;
   }
   .scroll-buttons {
     display: none;
