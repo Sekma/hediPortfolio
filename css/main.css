@@ -25,6 +25,7 @@
     flex: 1;
     color: #9CDCFE;
     letter-spacing: 0.1rem;
+    font-size: 0.9rem;
     transition: all 0.5s ease;
    
 }
@@ -41,7 +42,13 @@
     background: #9CDCFE;
     transition: left 0.3s ease;
 }
-
+.et-hero-tab i {
+    margin-right: 8px;
+  }
+  
+  .et-hero-tab span {
+    vertical-align: middle;
+  }
 
 /******************************* photo de profil et logo ***************************/
 .et-hero-tabs-container .profil-tab{
@@ -101,7 +108,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: #0a192f;;
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -142,6 +149,16 @@
 .et-slide#competences .frontend h5, .et-slide#competences .backend h5, .et-slide#competences .outils h5{
     color: #43A047;
 }
+/* animation */
+.et-slide h1{
+    opacity: 0;
+    transform: scale(5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .et-slide h1.visible{
+    opacity: 1;
+    transform: scale(1);
+  }
 
 @media (max-width: 991px) {
     .et-slide{
@@ -172,6 +189,13 @@
             font-size: 1.2rem;
             letter-spacing: 0.1rem;
         }  
+        /* navbar */
+        .et-hero-tab {
+            font-size: 0.8rem;
+            letter-spacing: 0rem;
+       }
+      
+      
 }
 @media (max-width: 767px){
    
@@ -183,8 +207,11 @@
         width: 4rem;
         top: 4.1rem;
     }
-    .et-hero-tab {
-        font-size: 0.6rem;
-        letter-spacing: 0rem;
-   }
+    .et-hero-tab i {
+      font-size: 1.1rem;
+      margin-right: 0; /* Pas d'espacement (texte masqué) */
+    }
+    .et-hero-tab span {
+      display: none; /* Masquer le texte */
+    }
 }

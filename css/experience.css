@@ -3,57 +3,57 @@
       padding: 0 1.5rem;
     }
     .et-slide#experiences h1{
-      margin: 80px 0;
+      margin: 80px auto 40px auto;
     }
   .et-slide#experiences .experiences{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
-.et-slide#experiences .experiences .experience .ball{
-  position: relative;
-  top: -5px;
-   height: 20px;
-   width: 20px; 
-   border-radius: 50% 50% 50% 0;
-   background-color: rgba(215,215,131, 0.8);
-   box-shadow: -1px 1px 0.5em 0 rgba(255, 255, 255, 0.5);
-   rotate: -45deg;
+.et-slide#experiences .vertical-line-1{
+  height: 1350px; 
+  width: 2px; 
+  background-color: #808080; 
+  position: absolute; 
+  top: 245px;
 }
-.et-slide#experiences .experiences .left-experience .ball{
-  left: 41px;
-}
-.et-slide#experiences .experiences .right-experience .ball{
-  right: 41px;
+.et-slide#experiences .vertical-line-2{
+  height: 540px; 
+  width: 2px; 
+  background-color: #808080; 
+  position: absolute; 
+  top: 1855px;
 }
   .et-slide#experiences .experiences .experience{
     display: flex;
     flex-direction: column;
+    padding: 10px;
     width: 50%;
 }
 .et-slide#experiences .experiences .left-experience{
     align-items: end;
-    padding-right: 30px;
-    border-right: 2px solid rgba(128, 128, 128, 0.5);
-    margin-top: -10px;
+   padding-right: 20px;
+   margin-top: 20px;
 }
 .et-slide#experiences .experiences .right-experience{
-    margin-top: 100px;
-    padding-left: 30px;
-    border-left: 1px solid rgba(128, 128, 128, 0.5);
+    margin-top: 180px;
+    padding-left: 20px;
 }
   .et-slide#experiences .experiences .entreprise{
-    opacity: 0.8;
     display: flex;
+    align-items: center;
     gap: 20px;
+    position: relative;
+    top: 5px;
 }
 .et-slide#experiences .experiences .left-experience .entreprise{
   flex-direction: row-reverse;
-  padding-right: 20px;
+  left: 55px;
 }
 .et-slide#experiences .experiences .right-experience .entreprise{
-  padding-left: 20px;
+  right: 55px;
 }
 .et-slide#experiences .experiences .entreprise img{
     width: 70px;
@@ -61,10 +61,9 @@
     background-color: #ffffff;
     padding: 10px;
     border-radius: 25%;
-    box-shadow: -3px 3px 6px rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 2px #808080;
   }
   .et-slide#experiences .experiences h3{
-    margin-bottom: -20px;
     text-align: start;
     color: #d7d783;
     opacity: 1;
@@ -78,8 +77,66 @@
     text-align: end;
   }
 
+/********************** l'animation *******************************/
+.et-slide#experiences .experiences .entreprise img{
+  opacity: 0;
+  transform: translateY(50px) scaleY(0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.et-slide#experiences .experiences .experience h3, .et-slide#experiences .experiences .experience h5.duree{
+  opacity: 0;
+  transform: translateY(50px) scaleY(1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.et-slide#experiences .experiences .entreprise img.visible, .et-slide#experiences .experiences .experience h3.visible, .et-slide#experiences .experiences .experience h5.duree.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+.et-slide#experiences .experiences .right-experience .entreprise h5{
+  opacity: 0;
+  transform: translateX(100px) scale(0.5);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.et-slide#experiences .experiences .right-experience .entreprise h5.visible {
+  opacity: 0.8;
+  transform: translateX(0) scale(1);
+}
+.et-slide#experiences .experiences .left-experience .entreprise h5{
+  opacity: 0;
+  transform: translateX(-100px) scale(0.5);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.et-slide#experiences .experiences .left-experience .entreprise h5.visible {
+  opacity: 0.8;
+  transform: translateX(0) scale(1);
+}
+
+
   @media (max-width: 991px){
    /* Expériences Professionnelles */
+.et-slide#experiences .vertical-line-1{
+  height: 1065px; 
+  top: 225px;
+}
+.et-slide#experiences .vertical-line-2{
+  height: 420px; 
+  top: 1530px;
+}
+.et-slide#experiences .experiences .left-experience{
+    align-items: end;
+   padding-right: 10px;
+   margin-top: 10px;
+}
+.et-slide#experiences .experiences .right-experience{
+    margin-top: 140px;
+    padding-left: 10px;
+}
+.et-slide#experiences .experiences .left-experience .entreprise{
+  left: 35px;
+}
+.et-slide#experiences .experiences .right-experience .entreprise{
+  right: 35px;
+}
     .et-slide#experiences .experiences .entreprise h5{
         line-height: 1rem;
         letter-spacing: normal;
@@ -88,42 +145,35 @@
       padding: 7px;
       width: 50px;
       height: 50px;
-    }
+    } 
 }
 
 @media (max-width: 767px){
    /* Expériences Professionnelles */
+   .et-slide#experiences .vertical-line-1, .et-slide#experiences .vertical-line-2{
+      display: none;
+    }
     .et-slide#experiences h1{
       margin: 60px 0;
+    }
+    .et-slide#experiences .experiences .experience{
+      width: 100%;
+      padding: auto 0;
     }
     .et-slide#experiences .experiences .left-experience .entreprise h5{
       text-align: start;
     }
-   .et-slide#experiences .experiences{
-    margin-bottom: -30px;
-   }
-    .et-slide#experiences .experiences .experience{
-      width: 100%;
-      margin-bottom: 1.5rem;
-      margin-top: -25px;
-      border-left: 2px solid rgba(128, 128, 128, 0.5);
-      padding:  0 0 30px 30px;
-    }
-    .et-slide#experiences .experiences .left-experience{
-      align-items: start;
-      border-right: none;
-    }
+.et-slide#experiences .experiences .left-experience{
+    align-items: start;
+}
+.et-slide#experiences .experiences .right-experience{
+    margin-top: 20px;
+}
     .et-slide#experiences .experiences .left-experience .entreprise{
       flex-direction: row;
-      padding-right: 0;
+      left: 0px;
     }
     .et-slide#experiences .experiences .right-experience .entreprise{
-      padding-left: 0;
-    } 
-    .et-slide#experiences .experiences .entreprise{
-      gap: 10px;
-  }
-  .et-slide#experiences .experiences .left-experience .ball{
-    left: -41px;
-  }
+      right: 0px;
+    }
 }
