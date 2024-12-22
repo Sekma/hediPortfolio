@@ -60,9 +60,23 @@
   .et-slide#formations .formations .certificats a span{
     color: #9CDCFE;
   }
-  .et-slide#formations .formations .certificats a:hover{
+  .et-slide#formations .formations .certificats a.visible:hover{
     opacity: 1;
     transition: all 0.5s ease;
+  }
+  /* animation */
+  .et-slide#formations .formations .formation-description div, .et-slide#formations .formations .formation-description h3,.et-slide#formations .formations .certificats h2, .et-slide#formations .formations .certificats a{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .et-slide#formations .formations .formation-description div.visible, .et-slide#formations .formations .certificats h2.visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .et-slide#formations .formations .formation-description h3.visible, .et-slide#formations .formations .certificats a.visible{
+    opacity: 0.7;
+    transform: translateY(0);
   }
 
   @media (max-width: 991px){

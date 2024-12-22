@@ -18,6 +18,15 @@ $(document).ready(function () {
                 $(this).addClass('visible');
             }
         });
+// contents
+        $('.et-slide#profil h3').each(function () {
+            let top = $(this).offset().top + 50;
+            let scrollBottom = $(window).scrollTop() + $(window).height();
+
+            if (top <= scrollBottom) {
+                $(this).addClass('visible');
+            }
+        });
 
          /////////////////////////////////////////////////// Compétences Techniques ///////////////////////////////////////
 //fontend 
@@ -54,35 +63,29 @@ $(document).ready(function () {
       });
 //backend
       $('.et-slide#competences .backend div').each(function (index) {
-        let top = $(this).offset().top;
+        let top = $(this).offset().top + 50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
         if (top <= scrollBottom) {
-            setTimeout(() => {
              $(this).addClass('visible');
-            }, index * 100); 
         }
       });
 //outils
       $('.et-slide#competences .outils div').each(function (index) {
-        let top = $(this).offset().top;
+        let top = $(this).offset().top + 50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
         if (top <= scrollBottom) {
-            setTimeout(() => {
              $(this).addClass('visible');
-            }, index * 100); 
         }
       });
 //soft skills
         $('.et-slide#competences .soft-skills div').each(function (index) {
-            let top = $(this).offset().top;
+            let top = $(this).offset().top + 50;
             let scrollBottom = $(window).scrollTop() + $(window).height();
 
             if (top <= scrollBottom) {
-                setTimeout(() => {
                 $(this).addClass('visible');
-                }, index * 100); 
             }
         });
 
@@ -137,8 +140,15 @@ $(document).ready(function () {
         }
       });
 
+    /////////////////////////////////////////////////// Formations Professionnelles ///////////////////////////////////////
+    $('.et-slide#formations .formations .formation-description div, .et-slide#formations .formations .formation-description h3,.et-slide#formations .formations .certificats h2, .et-slide#formations .formations .certificats a').each(function () {
+        let top = $(this).offset().top + 50;
+        let scrollBottom = $(window).scrollTop() + $(window).height();
 
-
+        if (top <= scrollBottom) {
+            $(this).addClass('visible');
+        }
+    });
 
     });
   });
