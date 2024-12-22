@@ -199,22 +199,22 @@
 }
 .et-slide#portfolio h2.project-title{
   opacity: 0;
-  transform: scaleY(0);
+  transform: scaleY(0.5) translateY(-50px);
   transition: opacity 1s ease, transform 1s ease;
 }
 .et-slide#portfolio h2.project-title.visible{
   opacity: 1;
-  transform:scaleY(1);
+  transform:scaleY(1) translateY(0);
 }
 
 .et-slide#portfolio .project{
   opacity: 0;
-  transform: scaleX(0) translateY(-100px);
+  transform: scaleX(0.5) translateX(-120px);
   transition: opacity 1s ease, transform 1s ease;
 }
 .et-slide#portfolio .project.visible{
   opacity: 1;
-  transform: scaleX(1) translateY(0);
+  transform: scaleX(1) translateX(0);
 }
 
 @media (max-width: 1220px) {
