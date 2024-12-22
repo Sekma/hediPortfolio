@@ -24,7 +24,7 @@
   width: 2px; 
   background-color: #808080; 
   position: absolute; 
-  top: 1855px;
+  top: 1875px;
 }
   .et-slide#experiences .experiences .experience{
     display: flex;
@@ -73,42 +73,23 @@
     line-height: 1.5rem;
     text-align: start;
   }
+  .et-slide#experiences .experiences .entreprise h5{
+    opacity: 0.8;
+  }
   .et-slide#experiences .experiences .left-experience .entreprise h5{
     text-align: end;
   }
 
+
 /********************** l'animation *******************************/
-.et-slide#experiences .experiences .entreprise img{
+.et-slide#experiences .experiences .right-experience, .et-slide#experiences .experiences .left-experience{
   opacity: 0;
-  transform: translateY(50px) scaleY(0);
+  transform: translateY(-100px) scaleY(0.5);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-.et-slide#experiences .experiences .experience h3, .et-slide#experiences .experiences .experience h5.duree{
-  opacity: 0;
-  transform: translateY(50px) scaleY(1);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.et-slide#experiences .experiences .entreprise img.visible, .et-slide#experiences .experiences .experience h3.visible, .et-slide#experiences .experiences .experience h5.duree.visible{
+.et-slide#experiences .experiences .right-experience.visible, .et-slide#experiences .experiences .left-experience.visible {
   opacity: 1;
-  transform: translateY(0);
-}
-.et-slide#experiences .experiences .right-experience .entreprise h5{
-  opacity: 0;
-  transform: translateX(100px) scale(0.5);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.et-slide#experiences .experiences .right-experience .entreprise h5.visible {
-  opacity: 0.8;
-  transform: translateX(0) scale(1);
-}
-.et-slide#experiences .experiences .left-experience .entreprise h5{
-  opacity: 0;
-  transform: translateX(-100px) scale(0.5);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.et-slide#experiences .experiences .left-experience .entreprise h5.visible {
-  opacity: 0.8;
-  transform: translateX(0) scale(1);
+  transform: translateY(0) scaleY(1);
 }
 
 
@@ -120,7 +101,7 @@
 }
 .et-slide#experiences .vertical-line-2{
   height: 420px; 
-  top: 1530px;
+  top: 1550px;
 }
 .et-slide#experiences .experiences .left-experience{
     align-items: end;
@@ -176,12 +157,4 @@
     .et-slide#experiences .experiences .right-experience .entreprise{
       right: 0px;
     }
-    /* animation */
-    
-.et-slide#experiences .experiences .right-experience .entreprise h5{
-  transform: translateX(-100px) scale(0.5);
-}
-.et-slide#experiences .experiences .right-experience .entreprise h5.visible {
-  transform: translateX(0) scale(1);
-}
 }

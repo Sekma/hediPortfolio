@@ -74,22 +74,9 @@ $(document).ready(function () {
       });
 
         /////////////////////////////////////////////////// Expériences Professionnelles ///////////////////////////////////////
-      // Animation des images
-    $('.et-slide#experiences .experiences .entreprise img').each(function () {
-        let top = $(this).offset().top;
-        let scrollBottom = $(window).scrollTop() + $(window).height();
-  
-        if (top <= scrollBottom) {
-          $(this).addClass('visible');
-        }
-      });
-  
-      // Animation des titres h3
-      ////////////// Animation des durées h5
-      ///////////////////////// Animation des h5 à droite
-      ////////////////////////////////////// Animation des h5 à gauche
-      $('.et-slide#experiences .experiences .experience h3, .et-slide#experiences .experiences .experience h5.duree, .et-slide#experiences .experiences .right-experience .entreprise h5, .et-slide#experiences .experiences .left-experience .entreprise h5').each(function () {
-        let h3Top = $(this).offset().top + 50;
+     
+      $('.et-slide#experiences .experiences .right-experience, .et-slide#experiences .experiences .left-experience').each(function () {
+        let h3Top = $(this).offset().top + 150;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
         if (h3Top <= scrollBottom) {
