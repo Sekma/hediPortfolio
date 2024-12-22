@@ -76,8 +76,8 @@
   
   .et-slide#competences h2{
     opacity: 0;
-    transform: translate(100px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transform: translate(-100px);
+    transition: opacity 1s ease, transform 1s ease;
   }
   .et-slide#competences h2.visible{
     opacity: 1;
@@ -102,26 +102,17 @@
   opacity: 1;
   transform: translateY(0);
 }
-/* backend & outils */
-.et-slide#competences .backend div, .et-slide#competences .outils div{
+/* backend & outils & soft-skills */
+.et-slide#competences .backend div, .et-slide#competences .outils div, .et-slide#competences .soft-skills div{
   opacity: 0;
-  transform: scaleY(0) translateX(50px);
+  transform: scaleY(0) translateX(-50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.et-slide#competences .backend div.visible, .et-slide#competences .outils div.visible{
+.et-slide#competences .backend div.visible, .et-slide#competences .outils div.visible, .et-slide#competences .soft-skills div.visible{
   opacity: 1;
   transform: scaleY(1);
 }
-/* soft-skills */
-.et-slide#competences .soft-skills div{
-  opacity: 0;
-  transform: scaleY(0);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.et-slide#competences .soft-skills div.visible{
-  opacity: 1;
-  transform: scaleY(1);
-}
+
 
 
   @media (max-width: 991px) {

@@ -10,14 +10,6 @@ $(document).ready(function () {
             }
         });
 
-        $('.et-slide#competences h2').each(function () {
-            let top = $(this).offset().top;
-            let scrollBottom = $(window).scrollTop() + $(window).height();
-
-            if (top <= scrollBottom) {
-                $(this).addClass('visible');
-            }
-        });
 // contents
         $('.et-slide#profil h3').each(function () {
             let top = $(this).offset().top + 50;
@@ -29,6 +21,16 @@ $(document).ready(function () {
         });
 
          /////////////////////////////////////////////////// Compétences Techniques ///////////////////////////////////////
+         
+        $('.et-slide#competences h2').each(function () {
+          let top = $(this).offset().top;
+          let scrollBottom = $(window).scrollTop() + $(window).height();
+
+          if (top <= scrollBottom) {
+              $(this).addClass('visible');
+          }
+      });
+
 //fontend 
     $('.et-slide#competences .frontend .languages .technologies img').each(function (index) {
         let top = $(this).offset().top +50;
@@ -61,8 +63,8 @@ $(document).ready(function () {
           }, 750);
         }
       });
-//backend
-      $('.et-slide#competences .backend div').each(function (index) {
+//backend & outils & soft skills
+      $('.et-slide#competences .backend div, .et-slide#competences .outils div, .et-slide#competences .soft-skills div').each(function (index) {
         let top = $(this).offset().top + 50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
@@ -70,24 +72,6 @@ $(document).ready(function () {
              $(this).addClass('visible');
         }
       });
-//outils
-      $('.et-slide#competences .outils div').each(function (index) {
-        let top = $(this).offset().top + 50;
-        let scrollBottom = $(window).scrollTop() + $(window).height();
-  
-        if (top <= scrollBottom) {
-             $(this).addClass('visible');
-        }
-      });
-//soft skills
-        $('.et-slide#competences .soft-skills div').each(function (index) {
-            let top = $(this).offset().top + 50;
-            let scrollBottom = $(window).scrollTop() + $(window).height();
-
-            if (top <= scrollBottom) {
-                $(this).addClass('visible');
-            }
-        });
 
         /////////////////////////////////////////////////// Expériences Professionnelles ///////////////////////////////////////
       // Animation des images
@@ -101,7 +85,10 @@ $(document).ready(function () {
       });
   
       // Animation des titres h3
-      $('.et-slide#experiences .experiences .experience h3').each(function () {
+      ////////////// Animation des durées h5
+      ///////////////////////// Animation des h5 à droite
+      ////////////////////////////////////// Animation des h5 à gauche
+      $('.et-slide#experiences .experiences .experience h3, .et-slide#experiences .experiences .experience h5.duree, .et-slide#experiences .experiences .right-experience .entreprise h5, .et-slide#experiences .experiences .left-experience .entreprise h5').each(function () {
         let h3Top = $(this).offset().top + 50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
@@ -109,39 +96,9 @@ $(document).ready(function () {
           $(this).addClass('visible');
         }
       });
-  
-      // Animation des durées h5
-      $('.et-slide#experiences .experiences .experience h5.duree').each(function () {
-        let h5Top = $(this).offset().top + 50;
-        let scrollBottom = $(window).scrollTop() + $(window).height();
-  
-        if (h5Top <= scrollBottom) {
-          $(this).addClass('visible');
-        }
-      });
-
-      ///////////////////////// Animation des h5 à droite
-      $('.et-slide#experiences .experiences .right-experience .entreprise h5').each(function (index) {
-        let h5Top = $(this).offset().top + 50;
-        let scrollBottom = $(window).scrollTop() + $(window).height();
-  
-        if (h5Top <= scrollBottom) {
-          $(this).addClass('visible'); // Les h5 s'affichent immédiatement après les images
-        }
-      });
-  
-      ///////////////////////// Animation des h5 à gauche
-      $('.et-slide#experiences .experiences .left-experience .entreprise h5').each(function (index) {
-        let h5Top = $(this).offset().top +  50;
-        let scrollBottom = $(window).scrollTop() + $(window).height();
-  
-        if (h5Top < scrollBottom) {
-          $(this).addClass('visible'); // Les h5 s'affichent immédiatement après les images
-        }
-      });
 
     /////////////////////////////////////////////////// Formations Professionnelles ///////////////////////////////////////
-    $('.et-slide#formations .formations .formation-description div, .et-slide#formations .formations .formation-description h3,.et-slide#formations .formations .certificats h2, .et-slide#formations .formations .certificats a').each(function () {
+    $('.et-slide#formations .formations .formation-description div, .et-slide#formations .formations .formation-description h3,.et-slide#formations .formations .certificats h2').each(function () {
         let top = $(this).offset().top + 50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
 
@@ -149,6 +106,35 @@ $(document).ready(function () {
             $(this).addClass('visible');
         }
     });
+    
+    $('.et-slide#formations .formations .certificats .certificat-item').each(function (index) {
+      let top = $(this).offset().top;
+      let scrollBottom = $(window).scrollTop() + $(window).height();
+
+      if (top <= scrollBottom) {
+        setTimeout(() => {
+          $(this).addClass('visible');
+        }, index * 100);
+      }
+    });
+    
+    /////////////////////////////////////////////////// Portfolio ///////////////////////////////////////
+    $('.et-slide#portfolio h3, .et-slide#portfolio .project').each(function () {
+      let top = $(this).offset().top + 200;
+      let scrollBottom = $(window).scrollTop() + $(window).height();
+
+      if (top <= scrollBottom) {
+          $(this).addClass('visible');
+      }
+  });
+  $('.et-slide#portfolio h2.project-title').each(function () {
+    let top = $(this).offset().top + 100;
+    let scrollBottom = $(window).scrollTop() + $(window).height();
+
+    if (top <= scrollBottom) {
+        $(this).addClass('visible');
+    }
+});
 
     });
   });

@@ -226,30 +226,108 @@
            </div>
            <h3>En mars 2023, j’ai entamé des études supérieures à distance à <span class="parenthese">l’École Multimédia de Paris</span>, en partenariat avec <span class="parenthese">The Digital School de Tunis</span>. Au cours de cette formation, j’ai obtenu plusieurs certifications, et en -------- 2025, j’ai décroché mon <span class="parenthese">Bachelor en Développement Multimédia</span>, renforçant mon expertise dans le domaine technologique.</h3>
          </div>
-      
-       <div class="certificats">
-         <h2>Certifications Obtenues</h2>
-         <a href=""><img src="img/formations/Lessentiel-de-Vue.js-2020.jpg" alt="" loading="lazy"><h5><span>L'essentiel de Vue.js</span><br>28 août 2024<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Les-fondements-de-la-programmation-Les-bases-de-donnees.jpg" alt="" loading="lazy"><h5><span>Les fondements de la programmation : Les bases de données</span><br>18 avr 2024<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Lessentiel-de-Laravel-9.jpg" alt="" loading="lazy"><h5><span>L'essentiel de Laravel 9</span><br>29 mars 2024<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/PHP-La-programmation-orientee-objet.jpg" alt="" loading="lazy"><h5><span>PHP : La programmation orientée objet</span><br>01 mars 2024<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Lessentiel-de-MySQL.jpg" alt="" loading="lazy"><h5><span>L'essentiel de MySQL</span><br>04 févr 2024<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Lessentiel-de-GitHub__.jpg" alt="" loading="lazy"><h5><span>L'essentiel de GitHub</span><br>12 janv 2024<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Lessentiel-de-PHP-et-MySQL.jpg" alt="" loading="lazy"><h5><span>L'essentiel de PHP et MySQL</span><br>12 déc 2023<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Lessentiel-de-PHP-7.jpg" alt="" loading="lazy"><h5><span>L'essentiel de PHP 7</span><br>20 nov 2023<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/Lessentiel-de-jQuery.jpg" alt="" loading="lazy"><h5><span>L'essentiel de jQuery</span><br>18 oct 2023<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/JavaScript-La-programmation-orientee-objet.jpg" alt="" loading="lazy"><h5><span>JavaScript : La programmation orientée objet</span><br>12 oct 2023<br>Linkedin</h5></a>
-         <a href=""><img src="img/formations/JavaScript-Algorithms-and-Data-Structures.jpg" alt="" loading="lazy"><h5><span>JavaScript Algorithms and Data Structures</span><br>07 août 2023<br>FreeCodeCamp</h5></a>
-         <a href=""><img src="img/formations/HTML, CSS, and Javascript for Web Developers.jpg" alt="" loading="lazy"><h5><span>HTML, CSS, and Javascript for Web Developers</span><br>27 juil 2023<br>Johns Hopkins University</h5></a>
-         <a href=""><img src="img/formations/responsive-web-design.jpg" alt="" loading="lazy"><h5><span>Responsive Web Design</span><br>13 avr 2023<br>FreeCodeCamp</h5></a>
-       </div>
-       </div> 
-       <!------------------- fixed background -------------------->
-       <div class="fixed-background" style="background-image: url('img/background/bg1.jpg')"></div>
+    
+        <!-- Modale pour l'image -->
+        <div class="certificat-modal">
+          <div class="modal-content">
+            <img src="" alt="Certification Image" id="certificat-modal-img">
+            <button class="close-modal">X</button>
+          </div>
+        </div>
+        
+    
+        <!-- Section des Certifications -->
+          <div class="certificats">
+            <h2>Certifications Obtenues</h2>
+            
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-Vue.js-2020.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de Vue.js" class="certificat-img">
+              L'essentiel de Vue.js 
+              <small>(28 août 2024)</small>
+            </h5>
+            
+            <h5 class="certificat-item" data-image="img/formations/Les-fondements-de-la-programmation-Les-bases-de-donnees.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="Les fondements de la programmation : Les bases de données" class="certificat-img">
+              Les fondements de la programmation : Les bases de données 
+              <small>(18 avril 2024)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-Laravel-9.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de Laravel 9" class="certificat-img">
+              L'essentiel de Laravel 9 
+              <small>(29 mars 2024)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/PHP-La-programmation-orientee-objet.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="PHP : La programmation orientée objet" class="certificat-img">
+              PHP : La programmation orientée objet 
+              <small>(01 mars 2024)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-MySQL.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de MySQL" class="certificat-img">
+              L'essentiel de MySQL
+              <small>(04 février 2024)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-GitHub__.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de GitHub" class="certificat-img">
+              L'essentiel de GitHub 
+              <small>(12 janvier 2024)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-PHP-et-MySQL.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de PHP et MySQL" class="certificat-img">
+              L'essentiel de PHP et MySQL 
+              <small>(12 décembre 2023)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-PHP-7.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de PHP 7" class="certificat-img">
+              L'essentiel de PHP 7
+              <small>(20 novembre 2023)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/Lessentiel-de-jQuery.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="L'essentiel de jQuery" class="certificat-img">
+              L'essentiel de jQuery
+              <small>(18 octobre 2023)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/JavaScript-La-programmation-orientee-objet.jpg">
+              <img src="img/formations/linkedin-original.jpg" alt="JavaScript : La programmation orientée objet" class="certificat-img">
+              JavaScript : La programmation orientée objet
+              <small>(12 octobre 2023)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/JavaScript-Algorithms-and-Data-Structures.jpg">
+              <img src="img/formations/freecodecamp.jpg" alt="JavaScript Algorithms and Data Structures" class="certificat-img">
+              JavaScript Algorithms and Data Structures 
+              <small>(07 août 2023)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/HTML, CSS, and Javascript for Web Developers.jpg">
+              <img src="img/formations/johns hopkins.jpg" alt="HTML, CSS, and Javascript for Web Developers" class="certificat-img">
+              HTML, CSS, and Javascript for Web Developers
+              <small>(27 juillet 2023)</small>
+            </h5>
+          
+            <h5 class="certificat-item" data-image="img/formations/responsive-web-design.jpg">
+              <img src="img/formations/freecodecamp.jpg" alt="Responsive Web Design" class="certificat-img">
+              Responsive Web Design
+              <small>(13 avril 2023)</small>
+            </h5>
+          
+          </div>
+          </div>
+       
+      <!------------------- fixed background -------------------->
+      <div class="fixed-background" style="background-image: url('img/background/bg1.jpg')"></div>
     </section>
 
     <!--------------------------------------------------- Compétences Techniques --------------------------------------------------------->
     <section class="et-slide" id="competences">
+      
       <h1>Compétences Techniques</h1>
 
       <!-- frontend -->
@@ -413,7 +491,7 @@
                 <source src="" type="video/mp4">
                 Votre navigateur ne supporte pas la lecture de vidéos HTML5.
             </video>
-            <button class="close-modal">&times;</button>
+            <button class="close-video">X</button>
           </div>
         
         <h2 class="project-title">Projets Full-Stack<br><span>Laravel & Vue.js</span></h2>
@@ -588,5 +666,6 @@
     <script src="js/script.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/slideUp.js"></script>
+    <script src="js/certificats.js"></script>
 </body>
 </html>

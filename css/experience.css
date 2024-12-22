@@ -176,4 +176,12 @@
     .et-slide#experiences .experiences .right-experience .entreprise{
       right: 0px;
     }
+    /* animation */
+    
+.et-slide#experiences .experiences .right-experience .entreprise h5{
+  transform: translateX(-100px) scale(0.5);
+}
+.et-slide#experiences .experiences .right-experience .entreprise h5.visible {
+  transform: translateX(0) scale(1);
+}
 }

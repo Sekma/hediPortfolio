@@ -1,6 +1,5 @@
 /* Formations et Certifications */
  .et-slide#formations .formations{
-    width: 100%;
     display: flex;
     padding-bottom: 20px;
   } 
@@ -19,102 +18,179 @@
     padding: 10px;
     opacity: 0.8;
   }
-  .et-slide#formations .formations .formation-description h2, .et-slide#formations .formations .certificats h2{
-    text-align: start;
-    line-height: 2rem; 
-    margin: 20px 0;
-    opacity: 1;
-    color: #C586C0;
-  }
   .et-slide#formations .formations .formation-description h3{
     margin: 20px 0;
   }
-  .et-slide#formations .formations .certificats{
-    width: 50%;
-    padding-left: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-around;
-  }
-  .et-slide#formations .formations .certificats h2{
-    width: 100%;
-    text-align: center;
-  }
-  .et-slide#formations .formations .certificats a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-    color: #ffffff;
-    opacity: 0.7;
-    transition: all 0.5s ease;
-    line-height: 1rem;
-    margin: 5px 0;
-  }
-  .et-slide#formations .formations .certificats img{
-    width: 90%;
-    margin-bottom: 10px;
-  }
-  .et-slide#formations .formations .certificats a span{
-    color: #9CDCFE;
-  }
-  .et-slide#formations .formations .certificats a.visible:hover{
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  /* animation */
-  .et-slide#formations .formations .formation-description div, .et-slide#formations .formations .formation-description h3,.et-slide#formations .formations .certificats h2, .et-slide#formations .formations .certificats a{
+
+/* Section des certifications */
+
+.et-slide#formations .formations .certificats{
+  width: 50%;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+}
+.et-slide#formations .formations .formation-description h2, .et-slide#formations .formations .certificats h2{
+  text-align: start;
+  line-height: 2rem; 
+  margin: 20px 0;
+  opacity: 1;
+  color: #C586C0;
+}
+.et-slide#formations .formations .certificats h2{
+  width: 100%;
+  text-align: center;
+}
+
+.et-slide#formations .formations .certificats .certificat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 30%;
+  color: #ffffff;
+  line-height: 1rem;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+.et-slide#formations .formations .certificats .certificat-item small{
+  color: #9CDCFE;
+}
+.et-slide#formations .formations .certificats .certificat-item img{
+  width: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px #9CDCFE;
+  padding: 7px;
+  border-radius: 25%;
+}
+.et-slide#formations .formations .certificats .certificat-item.visible:hover{
+  color: #9CDCFE;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* Modale */
+.certificat-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 47, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none; /* Caché par défaut */
+}
+
+.certificat-modal .modal-content {
+  position: relative;
+}
+
+.certificat-modal img {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 10px;
+}
+
+.certificat-modal .close-modal {
+  position: absolute;
+  font-weight: bold;
+  top: -10px;
+  right: 18%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #9CDCFE;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 2px #9CDCFE;
+  transition: all 0.3s ease;
+}
+.certificat-modal .close-modal:hover {
+  color: #c16137;
+  box-shadow: 0 2px 2px #c16137;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+
+  /***************************************** animation *********************************/
+.et-slide#formations .formations .certificats h2, .et-slide#formations .formations .formation-description div{
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateX(-100px);
     transition: opacity 1s ease, transform 1s ease;
   }
-  .et-slide#formations .formations .formation-description div.visible, .et-slide#formations .formations .certificats h2.visible{
+ .et-slide#formations .formations .certificats h2.visible, .et-slide#formations .formations .formation-description div.visible{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
-  .et-slide#formations .formations .formation-description h3.visible, .et-slide#formations .formations .certificats a.visible{
+
+  .et-slide#formations .formations .formation-description h3{
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .et-slide#formations .formations .formation-description h3.visible{
     opacity: 0.7;
-    transform: translateY(0);
+    transform: scaleX(1);
   }
+
+  .et-slide#formations .formations .certificats .certificat-item{
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .et-slide#formations .formations .certificats .certificat-item.visible{
+    opacity: 0.8;
+    transform: scale(1);
+  }  
 
   @media (max-width: 991px){
      /* Formations et Certifications */
      .et-slide#formations .formations .formation-description{
       width: 40%;
     }
+    .et-slide#formations .formations .certificats{
+      width: 60%;
+      padding-left: 20px;
+    }
      .et-slide#formations .formations .formation-description .formation img{
         width: 100px;
         padding: 7px;
       }
-      .et-slide#formations .formations .certificats{
-        width: 60%;
-        padding-left: 20px;
-      }
-      .et-slide#formations .formations .certificats a{
-        opacity: 0.8;
-      }
-      .et-slide#formations .formations .certificats a:hover{
-        opacity: 0.8;
-      }
   }
   @media (max-width: 767px){
     /* Formations et Certifications */
- .et-slide#formations .formations{
-  flex-direction: column;
-}
-.et-slide#formations .formations .formation-description{
- width: 100%;
-}
-.et-slide#formations .formations .formation-description .formation img{
-  width: 80px;
-}
-.et-slide#formations .formations .certificats{
-  width: 100%;
-  padding-left: 0;
-}
-.et-slide#formations .formations .certificats a{
-  width: 45%;
-}
+      .et-slide#formations .formations{
+        flex-direction: column;
+      }
+      .et-slide#formations .formations .formation-description{
+      width: 100%;
+      }
+      .et-slide#formations .formations .formation-description .formation img{
+        width: 80px;
+      }
+      .et-slide#formations .formations .certificats{
+        width: 100%;
+        padding-left: 0;
+      }
+      .et-slide#formations .formations .certificats .certificat-item{
+        width: 45%;
+      }.et-slide#formations .formations .certificats .certificat-item img{
+        width: 50px;
+        padding: 5px;
+      }
+      .certificat-modal img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+      .certificat-modal .close-modal {
+        top: -50px;
+        right: 5%;
+      }
   }

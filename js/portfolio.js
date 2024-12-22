@@ -51,7 +51,7 @@ scroll('-part-4');
 const thumbnails = document.querySelectorAll('.video-thumbnail');
 const modal = document.getElementById('videoModal');
 const modalVideo = document.getElementById('modalVideo');
-const closeModal = document.querySelector('.close-modal');
+const closeModal = document.querySelector('.close-video');
 
 // Fonction pour ouvrir la vidéo en plein écran
 thumbnails.forEach(thumbnail => {

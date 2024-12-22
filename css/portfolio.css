@@ -12,7 +12,7 @@
 .et-slide#portfolio h2.project-title span{
   color: #C586C0;
 }
-.horizontal-scroll {
+.et-slide#portfolio .horizontal-scroll {
   width: 100%;
   display: flex;
   justify-content: start;
@@ -25,11 +25,11 @@
 }
 
 /* Masquer la barre de défilement */
-.horizontal-scroll::-webkit-scrollbar {
+.et-slide#portfolio .horizontal-scroll::-webkit-scrollbar {
   display: none; /* Masque la scrollbar */
 }
 /* Style des projets */
-.project {
+.et-slide#portfolio .project {
   flex-shrink: 0;
   width: 100%;
   max-width: 450px; /* Largeur fixe pour chaque projet */
@@ -39,20 +39,20 @@
   transition: transform 0.3s ease;
 }
 
-.project img, .project video {
+.et-slide#portfolio .project img, .et-slide#portfolio .project video {
   background: linear-gradient(0deg, #111111 0%, #000000 100%);
   padding: 10px;
   max-width: 85%;
   border-radius: 10px 10px 0 0;
 }
 
-.project .support-1{
+.et-slide#portfolio .project .support-1{
   height: 8px;
   width: 100%;
   border-radius: 5px 5px 200px 200px;
   background: linear-gradient(0deg, #000000 0%, #C0C0C0 60%, #ffffff  100%);
 }
-.project .support-2{
+.et-slide#portfolio .project .support-2{
   margin: 0  auto 20px auto;
   height: 2px;
   width: 95%;
@@ -61,26 +61,26 @@
   box-shadow: -4px 2px 5px rgba(102, 102, 102, 0.5);
 }
 
-.horizontal-scroll .project h2{
+.et-slide#portfolio .horizontal-scroll .project h2{
   color: #FFEB3B;
   opacity: 0.9;
   font-size: 1.3em;
   line-height: 1.5rem;
   margin: 1.3em auto;
 }
-.horizontal-scroll .project h5{
+.et-slide#portfolio .horizontal-scroll .project h5{
   opacity: 0.8;
   line-height: 1.3rem;
 }
 /********************************************* github-links ***********************************/
-.github-links {
+.et-slide#portfolio .github-links {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 10px auto;
 }
 
-.github-links a {
+.et-slide#portfolio .github-links a {
   color: #808080;
   padding: 5px;
   text-decoration: none;
@@ -89,11 +89,11 @@
   transition: all 0.3s ease;
 }
 
-.github-links a:hover {
+.et-slide#portfolio .github-links a:hover {
   color: #9CDCFE;
 }
 /************************************** Boutons de démonstration **********************************/
-.project p {
+.et-slide#portfolio .project p {
   border-radius: 5px;
   letter-spacing: 0.1rem;
   padding: 10px 0;
@@ -103,19 +103,19 @@
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.project p:hover{
+.et-slide#portfolio .project p:hover{
   color: #c16137;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.5s ease;
 }
-.project p a{
+.et-slide#portfolio .project p a{
   color: #9CDCFE;
 }
-.project p a:hover{
+.et-slide#portfolio .project p a:hover{
   color: #c16137;
 }
 /************************************** Boutons de scroll *****************************/
-.scroll-buttons {
+.et-slide#portfolio .scroll-buttons {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -126,7 +126,7 @@
   position: relative;
   top: 170px;
 }
-.scroll-buttons button {
+.et-slide#portfolio .scroll-buttons button {
   pointer-events: all; /* Réactiver l'interaction pour les boutons */
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -138,16 +138,16 @@
   transition: all 0.3s ease;
 }
 
-.scroll-buttons button:hover {
+.et-slide#portfolio .scroll-buttons button:hover {
   color: #c16137;
   box-shadow: 0 2px 2px #c16137;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease;
 }
-.scroll-buttons-part-1, .scroll-buttons-part-2{
+.et-slide#portfolio .scroll-buttons-part-1, .et-slide#portfolio .scroll-buttons-part-2{
   display: none;
 }
-/********************************* vidéo **********************************/
+/********************************* vidéo modal **********************************/
 .video-modal {
   position: fixed;
   top: 0;
@@ -169,40 +169,77 @@
   border-radius: 10px;
 }
 
-.video-modal .close-modal {
+.video-modal .close-video{
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 2em;
-  color: white;
-  background: none;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #9CDCFE;
   border: none;
+  padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 0 2px 2px #9CDCFE;
+  transition: all 0.3s ease;
+}
+.video-modal .close-video:hover {
+  color: #c16137;
+  box-shadow: 0 2px 2px #c16137;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+/********************** l'animation *******************************/
+.et-slide#portfolio h3{
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.et-slide#portfolio h3.visible{
+  opacity: 0.7;
+}
+.et-slide#portfolio h2.project-title{
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.et-slide#portfolio h2.project-title.visible{
+  opacity: 1;
+  transform:scaleY(1);
+}
+
+.et-slide#portfolio .project{
+  opacity: 0;
+  transform: scaleX(0) translateY(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.et-slide#portfolio .project.visible{
+  opacity: 1;
+  transform: scaleX(1) translateY(0);
 }
 
 @media (max-width: 1220px) {
-  .scroll-buttons-part-1, .scroll-buttons-part-2{
+  .et-slide#portfolio .scroll-buttons-part-1, .et-slide#portfolio .scroll-buttons-part-2{
     display: flex;
   }
 }
 @media (max-width: 767px) {
-  .project {
+  .et-slide#portfolio .project {
     width: 80%; /* Ajustement pour écrans plus petits */
   }
-  .project .support-1, .project .support-2{
+  .et-slide#portfolio .project .support-1, .et-slide#portfolio .project .support-2{
     display: none;
   }
-  .project img, .project video{
+  .et-slide#portfolio .project img, .et-slide#portfolio .project video{
     border-radius: 10px;
   }
-  .horizontal-scroll .project h2{
+  .et-slide#portfolio .horizontal-scroll .project h2{
     font-size: 1em;
   }
-  .project p, .github-links{
+  .et-slide#portfolio .project p, .et-slide#portfolio .github-links{
     font-size: 0.7em;
     width: 100%;
   }
-  .scroll-buttons {
+  .et-slide#portfolio .scroll-buttons {
     display: none;
   }
   
