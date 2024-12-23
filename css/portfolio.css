@@ -1,5 +1,8 @@
 
 /*********************************** Conteneur défilable horizontal *******************************/
+.et-slide#portfolio{
+  background-image: linear-gradient(0deg, #1E1E1E 0%,  #0a192f  15%, #0a192f 100%);
+}
 .et-slide#portfolio h3{
  margin-bottom: 2em;
 }
@@ -30,6 +33,7 @@
 }
 /* Style des projets */
 .et-slide#portfolio .project {
+  background-color: #0a192f;
   flex-shrink: 0;
   width: 100%;
   max-width: 450px; /* Largeur fixe pour chaque projet */
@@ -81,16 +85,20 @@
 }
 
 .et-slide#portfolio .github-links a {
-  color: #808080;
+  color: #63B3ED;
   padding: 5px;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   letter-spacing: 0.1rem;
   display: inline-block;
   transition: all 0.3s ease;
 }
-
+.et-slide#portfolio .github-links a i{
+  color: #B0BEC5;
+}
 .et-slide#portfolio .github-links a:hover {
-  color: #9CDCFE;
+  color: #C586C0;
+  text-decoration: none;
 }
 /************************************** Boutons de démonstration **********************************/
 .et-slide#portfolio .project p {
@@ -99,20 +107,30 @@
   padding: 10px 0;
   margin: 10px auto;
   width: 60%;
-  color: #9CDCFE;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #63B3ED;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 3px #63B3ED;
   cursor: pointer;
 }
+.et-slide#portfolio .project p i{
+  color: #B0BEC5;
+}
 .et-slide#portfolio .project p:hover{
-  color: #c16137;
-  background-color: rgba(0, 0, 0, 0.8);
+  color: #C586C0;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 1px 3px #C586C0;
   transition: all 0.5s ease;
 }
 .et-slide#portfolio .project p a{
-  color: #9CDCFE;
+  color: #63B3ED;
+  padding: 10px 40px;
+}
+.et-slide#portfolio .project p a i{
+  color: #B0BEC5;
 }
 .et-slide#portfolio .project p a:hover{
-  color: #c16137;
+  color: #C586C0;
+  transition: all 0.5s ease;
 }
 /************************************** Boutons de scroll *****************************/
 .et-slide#portfolio .scroll-buttons {
@@ -128,20 +146,20 @@
 }
 .et-slide#portfolio .scroll-buttons button {
   pointer-events: all; /* Réactiver l'interaction pour les boutons */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
-  color: #9CDCFE;
+  color: #63B3ED;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  box-shadow: 0 2px 2px #9CDCFE;
+  box-shadow: 0 2px 2px #63B3ED;
   transition: all 0.3s ease;
 }
 
 .et-slide#portfolio .scroll-buttons button:hover {
-  color: #c16137;
-  box-shadow: 0 2px 2px #c16137;
-  background-color: rgba(0, 0, 0, 0.8);
+  color: #C586C0;
+  box-shadow: 0 2px 2px #C586C0;
+  background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.3s ease;
 }
 .et-slide#portfolio .scroll-buttons-part-1, .et-slide#portfolio .scroll-buttons-part-2{
@@ -154,7 +172,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(	10,	25,	47, 0.8);
+  background: rgba(	10,	25,	47, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,26 +184,27 @@
   max-width: 90%;
   max-height: 90%;
   border: 2px solid #1E1E1E ;
+  box-shadow: 1px 1px 6px #ffffff;
   border-radius: 10px;
 }
 
 .video-modal .close-video{
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 50px;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  color: #9CDCFE;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  box-shadow: 0 2px 2px #9CDCFE;
+  box-shadow: 1px 1px 6px #ffffff;
   transition: all 0.3s ease;
 }
 .video-modal .close-video:hover {
-  color: #c16137;
-  box-shadow: 0 2px 2px #c16137;
+  color: #C586C0;
+  box-shadow: 1px 1px 6px #C586C0;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease;
 }
@@ -246,6 +265,9 @@
 .et-slide#portfolio h2.project-title{
   margin: 10px 0;
   font-size: 1em;
+}
+.video-modal .close-video{
+  top: 200px;
 }
 }
 

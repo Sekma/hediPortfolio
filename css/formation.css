@@ -48,27 +48,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
   width: 30%;
-  color: #ffffff;
+  color: #63B3ED;
   line-height: 1rem;
   margin: 5px 0;
-  transition: all 0.3s ease;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .et-slide#formations .formations .certificats .certificat-item small{
   color: #9CDCFE;
 }
+.et-slide#formations .formations .certificats .certificat-item small i{
+  position: absolute;
+  box-shadow: -2px -2px 2px #ffffff;
+  background-color: #0a192f;
+  color: #C586C0;
+  padding: 5px;
+  border-radius: 20%;
+  font-size: 20px;
+  top: 42px;
+  left: 56%;
+}
 .et-slide#formations .formations .certificats .certificat-item img{
+  opacity: 0.9;
   width: 70px;
   background-color: #ffffff;
-  box-shadow: 0 2px 2px #9CDCFE;
+  box-shadow: -2px -2px 4px #808080;
   padding: 7px;
   border-radius: 25%;
 }
 .et-slide#formations .formations .certificats .certificat-item.visible:hover{
-  color: #9CDCFE;
-  text-decoration: underline;
+  color: #C586C0;
+  text-decoration: none;
   opacity: 1;
 }
 
@@ -79,7 +92,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 25, 47, 0.8);
+  background: rgba(10, 25, 47, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,16 +117,16 @@
   right: 18%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  color: #9CDCFE;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  box-shadow: 0 2px 2px #9CDCFE;
+  box-shadow: 1px 1px 6px #ffffff;
   transition: all 0.3s ease;
 }
 .certificat-modal .close-modal:hover {
-  color: #c16137;
-  box-shadow: 0 2px 2px #c16137;
+  color: #C586C0;
+  box-shadow: 1px 1px 6px #C586C0;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease;
 }
@@ -146,7 +159,7 @@
     transition: opacity 1s ease, transform 1s ease;
   }
   .et-slide#formations .formations .certificats .certificat-item.visible{
-    opacity: 0.8;
+    opacity: 0.9;
     transform: scale(1);
   }  
 
@@ -185,6 +198,13 @@
         width: 50px;
         padding: 5px;
       }
+      .et-slide#formations .formations .certificats .certificat-item small i{
+        box-shadow: -1px -1px 2px #ffffff;
+        padding: 4px;
+        font-size: 16px;
+        top: 27px;
+        left: 51%;
+      } 
       .certificat-modal img {
         max-width: 90%;
         max-height: 90%;

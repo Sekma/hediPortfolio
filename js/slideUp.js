@@ -9,7 +9,15 @@ $(document).ready(function () {
                 $(this).addClass('visible');
             }
         });
+// titles
+        $('.et-slide h1').each(function () {
+            let top = $(this).offset().top + 150;
+            let scrollBottom = $(window).scrollTop() + $(window).height();
 
+            if (top <= scrollBottom) {
+                $(this).addClass('visible');
+            }
+        });
 // contents
         $('.et-slide#profil h3').each(function () {
             let top = $(this).offset().top + 50;
@@ -65,7 +73,7 @@ $(document).ready(function () {
       });
 //backend & outils & soft skills
       $('.et-slide#competences .backend div, .et-slide#competences .outils div, .et-slide#competences .soft-skills div').each(function (index) {
-        let top = $(this).offset().top + 50;
+        let top = $(this).offset().top;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
         if (top <= scrollBottom) {
@@ -76,7 +84,7 @@ $(document).ready(function () {
         /////////////////////////////////////////////////// Expériences Professionnelles ///////////////////////////////////////
      
       $('.et-slide#experiences .experiences .right-experience, .et-slide#experiences .experiences .left-experience').each(function () {
-        let h3Top = $(this).offset().top + 150;
+        let h3Top = $(this).offset().top;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
         if (h3Top <= scrollBottom) {
@@ -107,7 +115,7 @@ $(document).ready(function () {
     
     /////////////////////////////////////////////////// Portfolio ///////////////////////////////////////
     $('.et-slide#portfolio h3, .et-slide#portfolio .project').each(function () {
-      let top = $(this).offset().top + 200;
+      let top = $(this).offset().top + 150;
       let scrollBottom = $(window).scrollTop() + $(window).height();
 
       if (top <= scrollBottom) {

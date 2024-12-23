@@ -9,12 +9,15 @@ const closeModalButton = document.querySelector('.close-modal');
 // Ajoute un événement de clic à chaque certificat
 certificatItems.forEach(item => {
   item.addEventListener('click', (event) => {
-    // Récupère l'image associée au certificat
-    const imageSrc = event.target.getAttribute('data-image');
-    
-    // Modifie la source de l'image dans la modale et affiche la modale
-    modalImage.src = imageSrc;
-    certificatModal.style.display = 'flex';
+    // Récupère l'élément parent avec l'attribut "data-image"
+    const certificatItem = event.target.closest('.certificat-item');
+    if (certificatItem) {
+      const imageSrc = certificatItem.getAttribute('data-image');
+      
+      // Modifie la source de l'image dans la modale et affiche la modale
+      modalImage.src = imageSrc;
+      certificatModal.style.display = 'flex';
+    }
   });
 });
 
@@ -29,3 +32,4 @@ certificatModal.addEventListener('click', (event) => {
     certificatModal.style.display = 'none';
   }
 });
+
