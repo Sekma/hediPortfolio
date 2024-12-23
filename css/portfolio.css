@@ -243,7 +243,7 @@
 }
 @media (max-width: 767px) {
   .et-slide#portfolio .project {
-    width: 80%; /* Ajustement pour écrans plus petits */
+    width: 90%; /* Ajustement pour écrans plus petits */
   }
   .et-slide#portfolio .project .support-1, .et-slide#portfolio .project .support-2{
     display: none;
@@ -257,6 +257,9 @@
   .et-slide#portfolio .project p, .et-slide#portfolio .github-links{
     font-size: 0.7em;
     width: 100%;
+  }
+  .et-slide#portfolio .github-links a {
+    letter-spacing: 0;
   }
   .et-slide#portfolio .scroll-buttons {
     display: none;
