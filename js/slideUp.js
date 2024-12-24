@@ -84,7 +84,7 @@ $(document).ready(function () {
         /////////////////////////////////////////////////// Expériences Professionnelles ///////////////////////////////////////
      
       $('.et-slide#experiences .experiences .right-experience, .et-slide#experiences .experiences .left-experience').each(function () {
-        let h3Top = $(this).offset().top;
+        let h3Top = $(this).offset().top + 150;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
         if (h3Top <= scrollBottom) {

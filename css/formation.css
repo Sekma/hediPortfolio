@@ -53,12 +53,15 @@
   width: 30%;
   color: #63B3ED;
   line-height: 1rem;
-  margin: 5px 0;
+  margin: 10px 0;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 .et-slide#formations .formations .certificats .certificat-item small{
-  color: #9CDCFE;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #ffffff;
 }
 .et-slide#formations .formations .certificats .certificat-item small i{
   position: absolute;
