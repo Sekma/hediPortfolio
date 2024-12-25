@@ -1,8 +1,5 @@
 
 /*********************************** Conteneur défilable horizontal *******************************/
-.et-slide#portfolio{
-  background-image: linear-gradient(0deg, #1E1E1E 0%,  #0a192f  15%, #0a192f 100%);
-}
 .et-slide#portfolio h3{
  margin-bottom: 2em;
 }

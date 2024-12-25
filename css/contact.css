@@ -1,3 +1,117 @@
 .et-slide#contact{
-    background-color: #1E1E1E;
+    background-image: linear-gradient(0deg, #ffffff  0%, #0a192f 95%, #0a192f 100%);
+}
+.et-slide#contact .contact-part-1{
+    height: 500px;
+    color: white;
+}
+.et-slide#contact  form{
+    margin: 0 auto;
+}
+.et-slide#contact  input, textarea{
+    padding-left: 10px;
+    border-radius: 5px;
+    margin: 4px 2px;
+    border: none;
+    opacity: 0.9;
+}
+.et-slide#contact  .champ1, .et-slide#contact  .champ2{
+    height: 35px;
+    width: 230px;
+}
+.et-slide#contact  button{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(255, 108, 34);
+    font-weight: bold;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+.et-slide#contact  button:hover{
+color: #000000;
+cursor: pointer;
+background-color: rgb(255, 108, 34);
+}
+.et-slide#contact .contact-part-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex; 
+    justify-content: space-around;
+    height: 350px;
+    width: 100%;
+}
+.et-slide#contact .contact-part-2 .pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.et-slide#contact .contact-part-2 .contact, .et-slide#contact .contact-part-2 .pages1, .et-slide#contact .contact-part-2 .pages2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: small;
+    opacity: 0.8;
+}
+.et-slide#contact .contact-part-2 .pages1 h3, .et-slide#contact .contact-part-2 .pages2 h3, .contact h2{
+    margin: 15px;
+}
+.et-slide#contact .contact-part-2 .pages1 a, .et-slide#contact .contact-part-2 .pages2 a, .et-slide#contact .contact-part-2 .contact a{
+    margin-top: 10px;
+}
+.et-slide#contact .contact-part-2 img{
+    width: 25px;
+    margin: 5px 15px;
+}
+.et-slide#contact .contact-part-2 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.et-slide#contact .contact-part-2 .contact a span{
+    font-weight: 600;
+}
+.et-slide#contact  .redLine{
+    background-color: rgb(201, 14, 14);
+    height: 2px;
+    width: 40px;
+    margin-bottom: 15px;
+}
+.et-slide#contact .contact-part-3{
+    background-color: #0a192f;
+    padding: 20px;
+    box-shadow: 0 -3px 4px 2px #0a192f;
+    width: 100vw;
+}
+.et-slide#contact .contact-part-3 span{
+    font-size: x-small;
+    opacity: 0.7;
+}
+.et-slide#contact .contact-part-3 .createur img{
+    width: 18px;
+    margin: 20px 10px;
+    opacity: 0.6;
+}
+@media (max-width: 767px){
+    .et-slide#contact .contact-part-1{
+        height: 550px;
+    }
+    .et-slide#contact  form{
+    width: 250px;
+    }
+    .et-slide#contact  textarea{
+        width: 230px;
+    }
+    .et-slide#contact  .et-slide#contact .contact-part-2{
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+    }
+    .et-slide#contact  .et-slide#contact .contact-part-2 .pages{
+        width: 100%;
+    }
 }

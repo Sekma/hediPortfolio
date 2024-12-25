@@ -114,10 +114,6 @@
     background-position: 50% 0;
     background-size: cover;
   }
-  .last-fixed-background::before{
-    background-color: #1E1E1E;
-  }
-
 /******************************************* profil *************************************************/
 .et-slide#profil .fixed-background{
     margin-top: 2rem;
