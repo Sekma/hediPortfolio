@@ -1,0 +1,225 @@
+  /* Expériences Professionnelles */
+    .et-slide#experiences{
+      padding: 0 1.5rem;
+    }
+    .et-slide#experiences h1{
+      margin: 80px auto 40px auto;
+    }
+  .et-slide#experiences .experiences{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.et-slide#experiences .vertical-line-1{
+  height: 1350px; 
+  width: 2px; 
+  background-color: #ffffff; 
+  box-shadow: 1px 0px 2px #ffffff;
+  position: absolute; 
+  top: 245px;
+  opacity: 0.5;
+}
+.et-slide#experiences .vertical-line-2{
+  height: 540px; 
+  width: 2px; 
+  background-color: #ffffff; 
+  box-shadow: 1px 0px 2px #ffffff;
+  position: absolute; 
+  top: 1875px;
+  opacity: 0.5;
+}
+.et-slide#experiences .experiences .vertical-line{
+  background-color: #ffffff; 
+  box-shadow: 1px 0px 2px #ffffff;
+  width: 2px;
+  height: 94%;
+  z-index: -1;
+  position: absolute;
+  right: 363px;
+  opacity: 0.5;
+}
+.et-slide#experiences .experiences .right-experience .vertical-line{
+  left: 363px;
+}
+.et-slide#experiences .horizontal-line{
+  background-color: #ffffff; 
+  box-shadow: 0px 1px 2px #ffffff;
+  width: 310px;
+  height: 2px;
+  z-index: -1;
+  position: relative;
+  top: 2px;
+  opacity: 0.5;
+}
+  .et-slide#experiences .experiences .experience{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+.et-slide#experiences .experiences .left-experience{
+    align-items: end;
+   padding-right: 20px;
+   margin-top: 20px;
+}
+.et-slide#experiences .experiences .right-experience{
+    margin-top: 180px;
+    padding-left: 20px;
+}
+  .et-slide#experiences .experiences .entreprise{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 5px;
+}
+.et-slide#experiences .experiences .left-experience .entreprise{
+  flex-direction: row-reverse;
+  left: 55px;
+}
+.et-slide#experiences .experiences .right-experience .entreprise{
+  right: 55px;
+}
+.et-slide#experiences .experiences .entreprise img{
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 25%;
+    box-shadow: 0px 2px 2px #808080;
+  }
+  .et-slide#experiences .experiences h3{
+    text-align: start;
+    color: #d7d783;
+    opacity: 1;
+  }
+  .et-slide#experiences .experiences h5{
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    text-align: start;
+  }
+  .et-slide#experiences .experiences .entreprise h5{
+    opacity: 0.8;
+  }
+  .et-slide#experiences .experiences .left-experience .entreprise h5{
+    text-align: end;
+  }
+
+
+/********************** l'animation *******************************/
+.et-slide#experiences .experiences .left-experience{
+  opacity: 0;
+  transform: translateY(-100px) scaleY(0.5);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.et-slide#experiences .experiences .left-experience.visible {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+.et-slide#experiences .experiences .right-experience{
+  opacity: 0;
+  transform: translateY(-100px) scaleY(0.5);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.et-slide#experiences .experiences .right-experience.visible{
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+
+/* .et-slide#experiences .experiences .right-experience, .et-slide#experiences .experiences .left-experience{
+  opacity: 0;
+  transform: translateY(-100px) scaleY(0.5);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.et-slide#experiences .experiences .right-experience.visible, .et-slide#experiences .experiences .left-experience.visible {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+} */
+
+
+  @media (max-width: 991px){
+   /* Expériences Professionnelles */
+.et-slide#experiences .vertical-line-1{
+  height: 1065px; 
+  top: 225px;
+}
+.et-slide#experiences .vertical-line-2{
+  height: 420px; 
+  top: 1550px;
+}
+.et-slide#experiences .experiences .vertical-line{
+  right: 343px;
+}
+.et-slide#experiences .experiences .right-experience .vertical-line{
+  left: 343px;
+}
+.et-slide#experiences .horizontal-line{
+  top: 3px;
+}
+.et-slide#experiences .experiences .left-experience{
+    align-items: end;
+   padding-right: 10px;
+   margin-top: 10px;
+}
+.et-slide#experiences .experiences .right-experience{
+    margin-top: 140px;
+    padding-left: 10px;
+}
+.et-slide#experiences .experiences .left-experience .entreprise{
+  left: 35px;
+}
+.et-slide#experiences .experiences .right-experience .entreprise{
+  right: 35px;
+}
+    .et-slide#experiences .experiences .entreprise h5{
+        line-height: 1rem;
+        letter-spacing: normal;
+    }
+    .et-slide#experiences .experiences .entreprise img{
+      padding: 7px;
+      width: 50px;
+      height: 50px;
+    } 
+}
+
+@media (max-width: 767px){
+   /* Expériences Professionnelles */
+   .et-slide#experiences .vertical-line-1, .et-slide#experiences .vertical-line-2, .et-slide#experiences .experiences .vertical-line, .et-slide#experiences .horizontal-line{
+      display: none;
+    }
+    .et-slide#experiences h1{
+      margin: 60px 0;
+    }
+    .et-slide#experiences .experiences .experience{
+      width: 100%;
+      padding: auto 0;
+    }
+    .et-slide#experiences .experiences .left-experience .entreprise h5{
+      text-align: start;
+    }
+.et-slide#experiences .experiences .left-experience{
+    align-items: start;
+}
+.et-slide#experiences .experiences .right-experience{
+    margin-top: 20px;
+}
+    .et-slide#experiences .experiences .left-experience .entreprise{
+      flex-direction: row;
+      left: 0px;
+    }
+    .et-slide#experiences .experiences .right-experience .entreprise{
+      right: 0px;
+    }
+    /* animation */
+    .et-slide#experiences .experiences .right-experience, .et-slide#experiences .experiences .left-experience{
+      opacity: 0;
+      transform: translateX(200px) scaleY(0.5);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .et-slide#experiences .experiences .right-experience.visible, .et-slide#experiences .experiences .left-experience.visible {
+      opacity: 1;
+      transform: translateX(0) scaleY(1);
+    } 
+}
