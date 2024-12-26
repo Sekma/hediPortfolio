@@ -50,7 +50,7 @@
     vertical-align: middle;
   }
 
-/******************************* photo de profil et logo ***************************/
+/******************************* photo de profil et logo et nom ***************************/
 .et-hero-tabs-container .profil-tab{
     position: absolute;
     width: 250px;
@@ -63,6 +63,16 @@
     width: 8rem;
     top: 100px;
     border-radius: 50%;
+}
+.et-hero-tabs-container .name{
+    font-size: 1.4rem;
+    background-color: rgba(156, 220, 254, 0.5);
+    color: #ffffffcd;
+    padding: 5px 7px 25px 7px;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    top: 210px;
+    left: 20px;
 }
 
 /************************************************** main ******************************************/
@@ -183,7 +193,13 @@
     .et-hero-tabs-container .logo-tab{
         width: 6.5rem;
     }
-
+    .et-hero-tabs-container .name{
+        font-size: 1.2rem;
+        padding: 5px 7px 20px 7px;
+        border-radius: 0 0 35px 35px;
+        top: 190px;
+        left: 13px;
+        }
     .et-slide h1 {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
@@ -215,6 +231,13 @@
         width: 4rem;
         top: 4.1rem;
     }
+    .et-hero-tabs-container .name{
+        padding: 5px 5px 10px 5px;
+        border-radius: 0 0 20px 20px;
+        font-size: 0.7rem;
+        top: 125px;
+        left: 8px;
+        }
     .et-hero-tab i {
       font-size: 1.1rem;
       margin-right: 0; /* Pas d'espacement (texte masqué) */

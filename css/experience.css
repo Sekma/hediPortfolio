@@ -99,6 +99,7 @@
           }
 
           .et-slide#experiences .right-experience .poste .horizontal-line{
+            top: 85px;
              /********************** l'animation *******************************/
              opacity: 0;
              width: 0;
@@ -115,9 +116,9 @@
             height: 2px;
             position: relative;
             rotate: 90deg;
-            top: 93px;
-            left: 384px;
-            width: 30px;
+            top: 96px;
+            left: 385px;
+            width: 28px;
             /********************** l'animation *******************************/
             opacity: 0;
             transform: scaleX(0);
@@ -186,4 +187,65 @@
                     line-height: 1rem;
                     letter-spacing: normal;
                 }
+
+                .et-slide#experiences .experiences .experience.right-experience{
+                  margin-top: 42px;
+                }
+        /********************************************** lines **********************************/
+        .et-slide#experiences .experience .poste .horizontal-line{
+          top: 60px;
         }
+        .et-slide#experiences .experience .poste .horizontal-line.visible{
+          width: 400px;
+        }
+
+        .et-slide#experiences .right-experience .poste .horizontal-line{
+            top: 65px;
+        }
+        .et-slide#experiences .right-experience .poste .horizontal-line.visible{
+          width: 330px;
+        }
+        .et-slide#experiences .experience .poste .vertical-line{
+          top: 88px;
+          left: 305px;
+          width: 48px;
+        }
+
+        .et-slide#experiences .experience .poste .horizontal-line-2{
+          top: 108px;
+          right: 380px;
+          width: 709px;
+        }
+        .et-slide#experiences .experience .poste .vertical-line-2{
+          top: 150px;
+          left: -425px;
+          width: 90px;
+        }
+    }
+
+    @media (max-width: 767px){
+      .et-slide#experiences .experiences{
+        gap: 20px;
+      }
+  .et-slide#experiences .experiences .experience{
+    width: 90%;
+  }
+      .et-slide#experiences .experiences .experience.right-experience{
+        margin-top: 0;
+      }
+              /********************************************** lines **********************************/
+              .et-slide#experiences .experience .poste .horizontal-line{
+                display: none;
+              }
+              .et-slide#experiences .experience .poste .vertical-line{
+                display: none;
+              }
+      
+              .et-slide#experiences .experience .poste .horizontal-line-2{
+                display: none;
+              }
+      
+              .et-slide#experiences .experience .poste .vertical-line-2{
+               display: none;
+              }
+    }
