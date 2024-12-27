@@ -207,6 +207,24 @@ $(document).ready(function () {
     }
 });
 
+//////////////////////////////////////////////////// Contact //////////////////////////////////////////////////
+  
+$('.et-slide#contact .contact-part-1 .contacts a').each(function (index) {
+    let top = $(this).offset().top + 50;
+    let scrollBottom = $(window).scrollTop() + $(window).height();
+
+    if (top <= scrollBottom) {
+      setTimeout(() => {
+        $(this).closest('a').find('span').addClass('visible');
+        
+      setTimeout(() => {
+        $(this).closest('a').find('img').addClass('visible');
+      }, 100);
+    }, index * 250);
+    }
+  });
+
+
     });
   });
   
