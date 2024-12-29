@@ -3,3 +3,6 @@
 # Permettre à tous les moteurs de recherche d'explorer l'intégralité du site
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://mohamed-hedi-sekma.netlify.app/sitemap.xml
