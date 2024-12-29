@@ -1,0 +1,5 @@
+# robots.txt pour https://mohamed-hedi-sekma.netlify.app/
+
+# Permettre à tous les moteurs de recherche d'explorer l'intégralité du site
+User-agent: *
+Allow: /
