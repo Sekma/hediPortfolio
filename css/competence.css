@@ -27,7 +27,7 @@
     width: 100%;
     gap: 2em;
   }
-  .et-slide#competences .frontend h3{
+  .et-slide#competences .frontend h3, .et-slide#competences .frontend h5{
       text-align: center !important;
   }
   .et-slide#competences .frontend .frameworks{
