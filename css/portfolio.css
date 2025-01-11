@@ -159,7 +159,7 @@
   background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.3s ease;
 }
-.et-slide#portfolio .scroll-buttons-part-1, .et-slide#portfolio .scroll-buttons-part-2{
+.et-slide#portfolio .scroll-buttons-part-2{
   display: none;
 }
 /********************************* vidéo modal **********************************/
@@ -234,7 +234,7 @@
 }
 
 @media (max-width: 1220px) {
-  .et-slide#portfolio .scroll-buttons-part-1, .et-slide#portfolio .scroll-buttons-part-2{
+ .et-slide#portfolio .scroll-buttons-part-2{
     display: flex;
   }
 }
