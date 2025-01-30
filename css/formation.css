@@ -1,5 +1,6 @@
 /* Formations et Certifications */
  .et-slide#formations .formations{
+  font-family: "Roboto", serif;
     display: flex;
     padding-bottom: 20px;
   } 

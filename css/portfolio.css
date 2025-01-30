@@ -1,9 +1,11 @@
 
 /*********************************** Conteneur défilable horizontal *******************************/
 .et-slide#portfolio h3{
+  font-family: "Roboto", serif;
  margin-bottom: 2em;
 }
 .et-slide#portfolio h2.project-title{
+  font-family: "Roboto", serif;
   opacity: 1;
   color: #FFEB3B;
   line-height: 2rem;

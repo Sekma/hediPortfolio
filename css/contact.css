@@ -17,6 +17,7 @@
     justify-content: space-around;
 }
 .et-slide#contact h3{
+    font-family: "Roboto", serif;
     padding: 0 10rem;
     margin-bottom: 3rem;
 }

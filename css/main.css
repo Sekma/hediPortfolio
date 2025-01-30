@@ -88,6 +88,7 @@
     padding: 0 8em;
 }
  .et-slide h1 {
+    font-family: "Roboto", serif;
     font-size: 2rem;
     margin: 2em 0;
     letter-spacing: 0.5rem;
@@ -126,6 +127,9 @@
 /******************************************* profil *************************************************/
 .et-slide#profil .fixed-background{
     margin-top: 2rem;
+}
+.et-slide#profil h3{
+    font-family: "Roboto", serif;
 }
 .et-slide#profil h3 span{
     color: #FFEB3B;
