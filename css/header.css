@@ -175,6 +175,7 @@ a {
 }
 .presentation h2{
     font-family: "Roboto", serif;
+    font-weight: 500;
     margin: 5px 0;
     text-align: center;
     width: 90%;

@@ -21,6 +21,7 @@
   }
   .et-slide#formations .formations .formation-description h3{
     margin: 20px 0;
+    font-weight: 500;
   }
 
 /* Section des certifications */
@@ -57,6 +58,7 @@
   margin: 10px 0;
   text-decoration: underline;
   text-underline-offset: 3px;
+  font-weight: 500;
 }
 .et-slide#formations .formations .certificats .certificat-item small{
   color: #ffffff;
