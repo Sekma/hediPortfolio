@@ -43,12 +43,46 @@
 }
 .et-slide#formations .formations .certificats h2{
   width: 100%;
-  text-align: center;
 }
-
 .et-slide#formations .formations .certificats .certificat-item {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+.et-slide#formations .formations .certificats .certificat-item img{
+  width: 40px;
+  background-color: #ffffff;
+  box-shadow: -2px -2px 4px #808080;
+  padding: 3px;
+  border-radius: 25%;
+}
+.et-slide#formations .formations .certificats .certificat-item h6{
+  text-align: start;
+}
+.et-slide#formations .formations .certificats .certificat-item h6 span{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 13px;
+}
+.et-slide#formations .formations .certificats .certificat-item.visible:hover{
+  opacity: 1;
+  transition: all 0.5s;
+}
+.et-slide#formations .formations .certificats .certificat-item.visible:hover h6{
+  color: #9CDCFE;
+}
+.et-slide#formations .formations .certificats .certificat-item.visible:hover h6 span{
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: -1px 1px 2px #808080;
+  transition: all 0.5s;
+}
+/* .et-slide#formations .formations .certificats .certificat-item {
+  display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
@@ -89,7 +123,7 @@
   color: #C586C0;
   text-decoration: none;
   opacity: 1;
-}
+} */
 
 /* Modale */
 .certificat-modal {
@@ -171,11 +205,11 @@
 
   @media (max-width: 991px){
      /* Formations et Certifications */
-     .et-slide#formations .formations .formation-description{
+    /*  .et-slide#formations .formations .formation-description{
       width: 40%;
-    }
+    } */
     .et-slide#formations .formations .certificats{
-      width: 60%;
+     /*  width: 60%; */
       padding-left: 20px;
     }
      .et-slide#formations .formations .formation-description .formation img{
@@ -191,14 +225,14 @@
       .et-slide#formations .formations .formation-description{
       width: 100%;
       }
-      .et-slide#formations .formations .formation-description .formation img{
+    /*   .et-slide#formations .formations .formation-description .formation img{
         width: 80px;
-      }
+      } */
       .et-slide#formations .formations .certificats{
         width: 100%;
         padding-left: 0;
       }
-      .et-slide#formations .formations .certificats .certificat-item{
+      /* .et-slide#formations .formations .certificats .certificat-item{
         width: 45%;
       }.et-slide#formations .formations .certificats .certificat-item img{
         width: 50px;
@@ -210,7 +244,7 @@
         font-size: 16px;
         top: 27px;
         left: 51%;
-      } 
+      }  */
       .certificat-modal img {
         max-width: 90%;
         max-height: 90%;
