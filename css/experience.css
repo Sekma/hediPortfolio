@@ -71,7 +71,7 @@
         width: 70px;
         height: 70px;
         background-color: #ffffff;
-        padding: 10px;
+        padding: 5px;
         border-radius: 25%;
         box-shadow: 0 0 2px 2px #808080;
         /********************** l'animation *******************************/
@@ -90,7 +90,7 @@
             box-shadow: 0px 1px 2px #ffffff;
             height: 2px;
             position: relative;
-            top: 80px;
+            top: 78px;
             /********************** l'animation *******************************/
             opacity: 0;
             width: 0;
@@ -182,7 +182,6 @@
                     width: 330px;
                 } 
                 .et-slide#experiences .experiences .experience .entreprise img{
-                  padding: 7px;
                   width: 50px;
                   height: 50px;
                 }

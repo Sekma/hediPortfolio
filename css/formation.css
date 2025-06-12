@@ -55,6 +55,7 @@
 
 .et-slide#formations .formations .certificats .certificat-item img{
   width: 40px;
+  height: auto;
   background-color: #ffffff;
   box-shadow: -2px -2px 4px #808080;
   padding: 3px;
