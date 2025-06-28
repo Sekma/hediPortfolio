@@ -1,6 +1,13 @@
 
 /******************************************** navbar *******************************/
-
+#profil,
+#experiences,
+#formations,
+#competences,
+#portfolio,
+#contact {
+  scroll-margin-top: 80px; /* ajuste à la hauteur réelle de ta navbar */
+}
 .et-hero-tabs-container {
     display: flex;
     flex-direction: row;
