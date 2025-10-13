@@ -16,7 +16,7 @@
     width: 100vw;
     height: 70px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
     transition: height 0.5s;
 }
@@ -38,7 +38,7 @@
 }
 .et-hero-tab:hover {
     color: #C586C0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.5s ease;
 }
 .et-hero-tab-slider {
@@ -58,28 +58,28 @@
   }
 
 /******************************* photo de profil et logo et nom ***************************/
-.et-hero-tabs-container .profil-tab{
+/* .et-hero-tabs-container .profil-tab{
     position: absolute;
     width: 250px;
     top: -250px;
     transition: all 0.5s;
     opacity: 0.8;
-} 
+}  */
 .et-hero-tabs-container .logo-tab{
     position: absolute;
     width: 8rem;
     top: 100px;
     border-radius: 50%;
 }
-.et-hero-tabs-container .name{
+/* .et-hero-tabs-container .name{
     font-size: 1.4rem;
     background: linear-gradient(45deg, rgb(58, 120, 142) 0%, #ffffff 51%, rgb(58, 120, 142) 100%);
-    -webkit-background-clip: text; /* Nécéssaire pour appliquer le dégradé */
-    -webkit-text-fill-color: transparent; /* Rend le texte transparent pour voir le fond */
+    -webkit-background-clip: text;  Nécéssaire pour appliquer le dégradé 
+    -webkit-text-fill-color: transparent;  Rend le texte transparent pour voir le fond 
     position: absolute;
     top: 215px;
     left: 28px;
-}
+} */
 
 /************************************************** main ******************************************/
 
