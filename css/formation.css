@@ -24,6 +24,16 @@
     font-weight: 500;
   }
 
+  /* galerie */
+
+  .et-slide#formations .formations .formation-description .formation.galerie img{
+    width: 20%;
+    margin: 15px 0;
+    background-color: #ffffff;
+    padding: 2px;
+    opacity: 1;
+  }
+
 /* Section des certifications */
 
 .et-slide#formations .formations .certificats{
