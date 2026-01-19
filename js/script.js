@@ -337,11 +337,11 @@ $(document).ready(function () {
       
                     // Passer à l'expérience suivante
                     showExperience(experiences, index + 1);
-                  }, 200); // Délai pour la quatrième ligne
-                }, 200); // Délai pour la troisième ligne
-              }, 200); // Délai pour la deuxième ligne
-            }, 200); // Délai pour la première ligne
-          }, 200); // Délai pour les descriptions
+                  }, 100); // Délai pour la quatrième ligne
+                }, 100); // Délai pour la troisième ligne
+              }, 100); // Délai pour la deuxième ligne
+            }, 100); // Délai pour la première ligne
+          }, 100); // Délai pour les descriptions
         }, 0); // Délai pour l'image
       }
       

@@ -34,6 +34,7 @@
 /* Style des projets */
 .et-slide#portfolio .project {
   background-color: #0a192f;
+  border: 1px solid #00000051;
   flex-shrink: 0;
   width: 100%;
   max-width: 450px; /* Largeur fixe pour chaque projet */
