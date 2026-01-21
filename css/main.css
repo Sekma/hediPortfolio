@@ -166,9 +166,6 @@
     color: #c16137;
 }
 
-.et-slide#competences .frontend h5, .et-slide#competences .backend h5, .et-slide#competences .outils h5{
-    color: #43A047;
-}
 /* animation */
 .et-slide h1{
     opacity: 0;

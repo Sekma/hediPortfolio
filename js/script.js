@@ -247,6 +247,55 @@ $(document).ready(function () {
           }
       });
 
+//test
+$('.et-slide#competences .test .manuel .technologies img').each(function (index) {
+        let top = $(this).offset().top +50;
+        let scrollBottom = $(window).scrollTop() + $(window).height();
+  
+        if (top <= scrollBottom) {
+          setTimeout(() => {
+            $(this).addClass('visible');
+          }, index * 150); // Délai de 100ms entre chaque image  
+          
+          setTimeout(() => {
+            $('.et-slide#competences .test .manuel h3').addClass('visible');
+            $('.et-slide#competences .test .manuel h5').addClass('visible');
+          }, 600);
+        }
+      });
+
+    $('.et-slide#competences .test .auto .technologies img').each(function (index) {
+        let top = $(this).offset().top +50;
+        let scrollBottom = $(window).scrollTop() + $(window).height();
+  
+        if (top <= scrollBottom) {
+          setTimeout(() => {
+            $(this).addClass('visible');
+          }, index * 150); // Délai de 100ms entre chaque image  
+          
+          setTimeout(() => {
+            $('.et-slide#competences .test .auto h3').addClass('visible');
+            $('.et-slide#competences .test .auto h5').addClass('visible');
+          }, 600);
+        }
+      });
+
+      $('.et-slide#competences .test .test-outils .technologies img').each(function (index) {
+        let top = $(this).offset().top +50;
+        let scrollBottom = $(window).scrollTop() + $(window).height();
+  
+        if (top <= scrollBottom) {
+          setTimeout(() => {
+            $(this).addClass('visible');
+          }, index * 150); // Délai de 100ms entre chaque image  
+          
+          setTimeout(() => {
+            $('.et-slide#competences .test .test-outils h3').addClass('visible');
+            $('.et-slide#competences .test .test-outils h5').addClass('visible');
+          }, 750);
+        }
+      });
+
 //fontend 
     $('.et-slide#competences .frontend .languages .technologies img').each(function (index) {
         let top = $(this).offset().top +50;
