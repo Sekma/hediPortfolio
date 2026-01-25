@@ -133,6 +133,13 @@
   color: #C586C0;
   transition: all 0.5s ease;
 }
+.code-link-disabled {
+  pointer-events: none;   /* désactive le clic */
+  color: gray;            /* optionnel : style “désactivé” */
+  cursor: default;        /* change le curseur pour montrer que ce n’est pas cliquable */
+  text-decoration: none;
+}
+
 /************************************** Boutons de scroll *****************************/
 .et-slide#portfolio .scroll-buttons {
   width: 100%;
@@ -163,7 +170,7 @@
   background-color: rgba(0, 0, 0, 0.9);
   transition: all 0.3s ease;
 }
-.et-slide#portfolio .scroll-buttons-part-2{
+.et-slide#portfolio .scroll-buttons-part-1{
   display: none;
 }
 /********************************* vidéo modal **********************************/

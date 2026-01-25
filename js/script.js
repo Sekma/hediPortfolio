@@ -177,7 +177,6 @@ function scroll(part){
 scroll('-part-1');
 scroll('-part-2');
 scroll('-part-3');
-scroll('-part-4');
 
 ////////////////////////// vidéo //////////////////////
 
