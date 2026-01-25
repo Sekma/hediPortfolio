@@ -147,4 +147,7 @@
        .et-slide#competences .outils .outil, .et-slide#competences .soft-skills .outil{
         width: 100%;
     }
+    .et-slide#competences .technologies{
+      gap: 20px;
+    }
 }
