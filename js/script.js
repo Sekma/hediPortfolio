@@ -297,7 +297,7 @@ $('.et-slide#competences .test .manuel .technologies img').each(function (index)
       });
 
 //fontend 
-    $('.et-slide#competences .frontend .languages .technologies img').each(function (index) {
+    $('.et-slide#competences .dev-web .front .technologies img').each(function (index) {
         let top = $(this).offset().top +50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
@@ -307,13 +307,13 @@ $('.et-slide#competences .test .manuel .technologies img').each(function (index)
           }, index * 150); // Délai de 100ms entre chaque image  
           
           setTimeout(() => {
-            $('.et-slide#competences .frontend .languages h3').addClass('visible');
-            $('.et-slide#competences .frontend .languages h5').addClass('visible');
+            $('.et-slide#competences .dev-web .front h3').addClass('visible');
+            $('.et-slide#competences .dev-web .front h5').addClass('visible');
           }, 600);
         }
       });
 
-      $('.et-slide#competences .frontend .frameworks .technologies img').each(function (index) {
+      $('.et-slide#competences .dev-web .back .technologies img').each(function (index) {
         let top = $(this).offset().top +50;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
@@ -323,13 +323,13 @@ $('.et-slide#competences .test .manuel .technologies img').each(function (index)
           }, index * 150); // Délai de 100ms entre chaque image  
           
           setTimeout(() => {
-            $('.et-slide#competences .frontend .frameworks h3').addClass('visible');
-            $('.et-slide#competences .frontend .frameworks h5').addClass('visible');
+            $('.et-slide#competences .dev-web .back h3').addClass('visible');
+            $('.et-slide#competences .dev-web .back h5').addClass('visible');
           }, 750);
         }
       });
-//backend & outils & soft skills
-      $('.et-slide#competences .backend div, .et-slide#competences .outils div, .et-slide#competences .soft-skills div').each(function (index) {
+//outils & soft skills
+      $('.et-slide#competences .outils div, .et-slide#competences .soft-skills div').each(function (index) {
         let top = $(this).offset().top;
         let scrollBottom = $(window).scrollTop() + $(window).height();
   
