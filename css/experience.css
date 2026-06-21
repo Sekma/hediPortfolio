@@ -4,7 +4,11 @@
   }
   .et-slide#experiences h1{
     margin: 80px auto 40px auto;
-  }
+  } 
+.et-slide#experiences h3.intro{
+ margin: 20px auto;
+ max-width: 900px;
+}
   .et-slide#experiences .experiences{
     display: flex;
     justify-content: center;
@@ -23,6 +27,10 @@
     padding: 10px;
     
   }
+  .et-slide#experiences .experiences .experience .poste .duree{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-style: italic;
+  }
   .et-slide#experiences .experiences .experience .entreprise{
     display: flex;
     align-items: center;
@@ -30,7 +38,7 @@
     }
     .et-slide#experiences .experiences .experience .poste h3{
         text-align: start;
-        color: #d7d783;
+        color: rgb(37, 99, 235);
         font-size: 1.1rem;
         letter-spacing: 0.1rem;
         /********************** l'animation *******************************/
@@ -55,7 +63,6 @@
     }
     
     .et-slide#experiences .experiences .experience .entreprise h5{
-      font-family: "Roboto", serif;
       font-weight: 500;
       margin-top: -15px;
       line-height: 1.1rem;
@@ -67,7 +74,7 @@
         transition: opacity 0.2s ease, transform 0.2s ease;
       }
       .et-slide#experiences .experiences .experience .entreprise h5.visible{
-        opacity: 0.8;
+        opacity: 1;
         transform: translate(0);
       }
     .et-slide#experiences .experiences .experience .entreprise img{
@@ -76,22 +83,22 @@
         background-color: #ffffff;
         padding: 3px;
         border-radius: 25%;
-        box-shadow: 0 0 2px 2px #808080;
+        box-shadow: 0 2px 10px rgba(15, 23, 42, 0.3);
         /********************** l'animation *******************************/
         opacity: 0;
         transform: scale(0);
         transition: opacity 0.2s ease, transform 0.2s ease;
         }
         .et-slide#experiences .experiences .experience .entreprise img.visible{
-            opacity: 0.9;
+            opacity: 1;
             transform: scale(1);
             }
 
         /********************************************** lines **********************************/
         .et-slide#experiences .experience .poste .horizontal-line{
-            background-color: #ffffff; 
-            box-shadow: 0px 1px 2px #ffffff;
-            height: 2px;
+            background-color: rgba(15, 23, 4, 0.3); 
+            box-shadow: 0px 1px 1px rgba(15, 23, 4, 0.3);
+            height: 1px;
             position: relative;
             top: 60px;
             /********************** l'animation *******************************/
@@ -105,7 +112,7 @@
           }
 
           .et-slide#experiences .right-experience .poste .horizontal-line{
-            top: 65px;
+            top: 63px;
              /********************** l'animation *******************************/
              opacity: 0;
              width: 0;
@@ -117,14 +124,14 @@
           }
 
           .et-slide#experiences .experience .poste .vertical-line{
-            background-color: #ffffff; 
-            box-shadow: 0px 1px 2px #ffffff;
-            height: 2px;
+            background-color: rgba(15, 23, 4, 0.3); 
+            box-shadow: 0px 1px 1px rgba(15, 23, 4, 0.3);
+            height: 1px;
             position: relative;
             rotate: 90deg;
-            top: 76px;
-            left: 385px;
-            width: 28px;
+            top: 74px;
+            left: 387px;
+            width: 26px;
             /********************** l'animation *******************************/
             opacity: 0;
             transform: scaleX(0);
@@ -136,11 +143,11 @@
           }
 
           .et-slide#experiences .experience .poste .horizontal-line-2{
-            background-color: #ffffff; 
-            box-shadow: 0px 1px 2px #ffffff;
-            height: 2px;
+            background-color: rgba(15, 23, 4, 0.3); 
+            box-shadow: 0px 1px 1px rgba(15, 23, 4, 0.3);
+            height: 1px;
             position: relative;
-            top: 88px;
+            top: 86px;
             right: 450px;
             width: 850px;
             /********************** l'animation *******************************/
@@ -154,13 +161,13 @@
           }
 
           .et-slide#experiences .experience .poste .vertical-line-2{
-            background-color: #ffffff; 
-            box-shadow: 0px 1px 2px #ffffff;
-            height: 2px;
+            background-color: rgba(15, 23, 4, 0.3); 
+            box-shadow: 0px 1px 1px rgba(15, 23, 4, 0.3);
+            height: 1px;
             position: relative;
             rotate: 90deg;
             top: 140px;
-            left: -503px;
+            left: -505px;
             width: 110px;
             /********************** l'animation *******************************/
             opacity: 0;

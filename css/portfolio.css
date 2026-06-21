@@ -1,19 +1,18 @@
 
 /*********************************** Conteneur défilable horizontal *******************************/
 .et-slide#portfolio h3{
-  font-family: "Roboto", serif;
-  font-weight: 500;
+    color: rgb(15, 23, 42);
  margin-bottom: 2em;
 }
 .et-slide#portfolio h2.project-title{
-  font-family: "Roboto", serif;
-  opacity: 1;
-  color: #FFEB3B;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.7rem;
   line-height: 2rem;
   margin: 15px auto;
 }
 .et-slide#portfolio h2.project-title span{
-  color: #C586C0;
+     font-style: italic;
+  color: rgb(37, 99, 235);
 }
 .et-slide#portfolio .horizontal-scroll {
   width: 100%;
@@ -33,14 +32,15 @@
 }
 /* Style des projets */
 .et-slide#portfolio .project {
-  background-color: #0a192f;
-  border: 1px solid #00000051;
+ 
   flex-shrink: 0;
   width: 100%;
   max-width: 450px; /* Largeur fixe pour chaque projet */
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 15px;    
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: rgba(250, 250, 250, 0.3);
+  border: 1px solid rgba(15, 23, 42, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -67,71 +67,80 @@
 }
 
 .et-slide#portfolio .horizontal-scroll .project h2{
-  color: #FFEB3B;
-  opacity: 0.9;
+  color: rgb(37, 99, 235);
   font-size: 1.3em;
   line-height: 1.5rem;
   margin: 1.3em auto;
 }
 .et-slide#portfolio .horizontal-scroll .project h5{
-  opacity: 0.8;
   line-height: 1.3rem;
 }
 /********************************************* github-links ***********************************/
 .et-slide#portfolio .github-links {
   display: flex;
-  flex-direction: column;
-  width: 80%;
+  justify-content: space-around;
   margin: 10px auto;
 }
 
 .et-slide#portfolio .github-links a {
-  color: #63B3ED;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-style: italic;
+    letter-spacing: 0.1rem;
+  color: rgb(139, 92, 246);
   padding: 5px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  letter-spacing: 0.1rem;
   display: inline-block;
   transition: all 0.3s ease;
 }
-.et-slide#portfolio .github-links a i{
-  color: #B0BEC5;
+.et-slide#portfolio .project-skills{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+.et-slide#portfolio h5.project-skills-title{
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-style: italic;
+   color:   rgb(6, 182, 212); 
+  text-align: start;
+  margin: 10px 0;
+}
+.et-slide#portfolio .project-skills h5{
+  background-color:rgba(37, 99, 235, 0.1);
+  color: rgb(37, 99, 235);
+  padding: 3px 10px;
+  border-radius: 25px;
+}
+
 .et-slide#portfolio .github-links a:hover {
-  color: #C586C0;
-  text-decoration: none;
+  color: rgb(37, 99, 235);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 /************************************** Boutons de démonstration **********************************/
 .et-slide#portfolio .project p {
-  border-radius: 5px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-style: italic;
+   font-weight: 500;
+   font-size: 13px;
+  border-radius: 25px;
   letter-spacing: 0.1rem;
   padding: 10px 0;
   margin: 10px auto;
   width: 60%;
-  color: #63B3ED;
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 1px 3px #63B3ED;
+  color: #ffffff;
+  background-color: rgb(37, 99, 235);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
   cursor: pointer;
 }
-.et-slide#portfolio .project p i{
-  color: #B0BEC5;
-}
+
 .et-slide#portfolio .project p:hover{
-  color: #C586C0;
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 1px 3px #C586C0;
-  transition: all 0.5s ease;
+  transform: scale(1.03);
+  transition: all 0.2s ease;
 }
 .et-slide#portfolio .project p a{
-  color: #63B3ED;
-  padding: 10px 40px;
-}
-.et-slide#portfolio .project p a i{
-  color: #B0BEC5;
-}
-.et-slide#portfolio .project p a:hover{
-  color: #C586C0;
-  transition: all 0.5s ease;
+  color: #ffffff;
+  padding: 5px 20px;
 }
 .code-link-disabled {
   pointer-events: none;   /* désactive le clic */
@@ -150,25 +159,30 @@
   transform: translateY(-50%); /* Ajustement pour centrer précisément */
   pointer-events: none; /* Empêche d'interférer avec le contenu */
   position: relative;
-  top: 170px;
+  top: 280px;
 }
 .et-slide#portfolio .scroll-buttons button {
-  pointer-events: all; /* Réactiver l'interaction pour les boutons */
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-  color: #63B3ED;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  box-shadow: 0 2px 2px #63B3ED;
-  transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(15, 23, 42);
+    font-size: 1.2rem;
+    border: 2px solid rgb(37, 99, 235);
+    pointer-events: all; /* Réactiver l'interaction pour les boutons */
+     width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
 }
 
 .et-slide#portfolio .scroll-buttons button:hover {
-  color: #C586C0;
-  box-shadow: 0 2px 2px #C586C0;
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: all 0.3s ease;
+  background: white;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+.et-slide#portfolio .scroll-buttons button i {
+    pointer-events: none;
 }
 /**.et-slide#portfolio .scroll-buttons-part-1{
   display: none;
@@ -198,23 +212,26 @@
 
 .video-modal .close-video{
   position: absolute;
+  font-weight: bold;
   top: 20px;
   right: 50px;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  box-shadow: 1px 1px 6px #ffffff;
-  transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(15, 23, 42);
+    font-size: 1.2rem;
+    border: 2px solid rgb(37, 99, 235);
+    pointer-events: all; /* Réactiver l'interaction pour les boutons */
+     width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
 }
 .video-modal .close-video:hover {
-  color: #C586C0;
-  box-shadow: 1px 1px 6px #C586C0;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.3s ease;
+   background: white;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
 /********************** l'animation *******************************/
 .et-slide#portfolio h3{
@@ -222,7 +239,7 @@
   transition: opacity 1s ease;
 }
 .et-slide#portfolio h3.visible{
-  opacity: 0.7;
+  opacity: 1;
 }
 .et-slide#portfolio h2.project-title{
   opacity: 0;
@@ -261,6 +278,9 @@
   }
   .et-slide#portfolio .horizontal-scroll .project h2{
     font-size: 1em;
+  }
+  .et-slide#portfolio .project-skills h5{
+    font-size: 0.7em;
   }
   .et-slide#portfolio .project p, .et-slide#portfolio .github-links{
     font-size: 0.7em;

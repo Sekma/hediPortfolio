@@ -1,10 +1,14 @@
 .et-slide#contact{
-    background-image: linear-gradient(0deg, #ffffff  0%, #0a192f 85%, #0a192f 100%);
+    /* background-image: linear-gradient(0deg, #0a192f  0%, #0a192f 15%, #ffffff 70%, #ffffff 100%); */
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+}
+.et-slide#contact .blue-line{
+    width: 100px;
+    left: 50px;
 }
 .et-slide#contact h1{
     margin-bottom: 1.5em;
@@ -17,7 +21,6 @@
     justify-content: space-around;
 }
 .et-slide#contact h3{
-    font-family: "Roboto", serif;
     font-weight: 500;
     padding: 0 10rem;
     margin-bottom: 3rem;
@@ -98,7 +101,7 @@ background-color: rgb(201, 14, 14);
     transform: rotate(0) translateX(0);
 }
 .et-slide#contact .contact-part-1 .contacts a span{
-    color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 0.9rem;
       /* animation */
       opacity: 0;
@@ -111,20 +114,21 @@ background-color: rgb(201, 14, 14);
 }
 /* part 2 */
 .et-slide#contact .contact-part-2{
-    background-color: #0a192f;
+    background-color: rgba(37, 99, 235, 0.3);
     padding: 20px;
-    box-shadow: 0 -3px 4px 2px #0a192f;
+    box-shadow: 0 -1px 4px rgba(37, 99, 235, 0.3);
     width: 100vw;
 }
 .et-slide#contact .contact-part-2 span{
+    color: #000000;
     font-size: x-small;
     opacity: 0.7;
 }
 .et-slide#contact .contact-part-2 .createur a i{
-    color: #ffffff;
+    color: #000000;
     font-size: small;
-    margin: 20px 10px;
-    opacity: 0.6;
+    margin: 15px 10px;
+    opacity: 0.7;
 }
 
 

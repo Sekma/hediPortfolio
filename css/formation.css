@@ -1,6 +1,5 @@
 /* Formations et Certifications */
  .et-slide#formations .formations{
-  font-family: "Roboto", serif;
     display: flex;
     padding-bottom: 20px;
   } 
@@ -15,13 +14,11 @@
   }
   .et-slide#formations .formations .formation-description .formation img{
     width: 150px;
-    background-color: #ffffff;
     padding: 10px;
-    opacity: 0.8;
   }
   .et-slide#formations .formations .formation-description h3{
     margin: 20px 0;
-    font-weight: 500;
+    color: rgb(15, 23, 42);
   }
 
   /* galerie */
@@ -29,9 +26,8 @@
   .et-slide#formations .formations .formation-description .formation.galerie img{
     width: 20%;
     margin: 15px 0;
-    background-color: #ffffff;
     padding: 2px;
-    opacity: 1;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.2);
   }
 
 /* Section des certifications */
@@ -49,10 +45,15 @@
   line-height: 2rem; 
   margin: 20px 0;
   opacity: 1;
-  color: #C586C0;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-style: italic;
 }
 .et-slide#formations .formations .certificats h2{
   width: 100%;
+  color: rgb(37, 99, 235);
+}
+.et-slide#formations .formations .special{
+  color: rgb(37, 99, 235);
 }
 .et-slide#formations .formations .certificats .certificat-item {
   display: flex;
@@ -66,32 +67,34 @@
 .et-slide#formations .formations .certificats .certificat-item img{
   width: 40px;
   height: auto;
-  background-color: #ffffff;
-  box-shadow: -2px -2px 4px #808080;
   padding: 3px;
   border-radius: 25%;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.2);
 }
 .et-slide#formations .formations .certificats .certificat-item h6{
   text-align: start;
+  font-size: 13px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-style: italic;
 }
 .et-slide#formations .formations .certificats .certificat-item h6 span{
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  font-size: 13px;
+ 
+    font-family: "Roboto", serif;
+  font-size: 14px;
+  color: rgb(139, 92, 246);
 }
-.et-slide#formations .formations .certificats .certificat-item.visible:hover{
-  opacity: 1;
-  transition: all 0.5s;
-}
-.et-slide#formations .formations .certificats .certificat-item.visible:hover h6{
+ .et-slide#formations .formations .certificats .certificat-item.visible:hover{
+  
+  transform: scale(1.03);
+  transition: all 0.3s;
+} 
+/* .et-slide#formations .formations .certificats .certificat-item.visible:hover h6{
   color: #9CDCFE;
-}
-.et-slide#formations .formations .certificats .certificat-item.visible:hover h6 span{
-  text-decoration: none;
-  color: #ffffff;
-  text-shadow: -1px 1px 2px #808080;
-  transition: all 0.5s;
-}
+} */
+ .et-slide#formations .formations .certificats .certificat-item.visible:hover h6 span{
+  color:  rgb(37, 99, 235);
+  
+} 
 /* .et-slide#formations .formations .certificats .certificat-item {
   display: flex;
   align-items: center;
@@ -166,20 +169,23 @@
   font-weight: bold;
   top: -10px;
   right: 18%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  box-shadow: 1px 1px 6px #ffffff;
-  transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.8);
+    color: rgb(15, 23, 42);
+    font-size: 1.2rem;
+    border: 2px solid rgb(37, 99, 235);
+    pointer-events: all; /* Réactiver l'interaction pour les boutons */
+     width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
 }
 .certificat-modal .close-modal:hover {
-  color: #C586C0;
-  box-shadow: 1px 1px 6px #C586C0;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.3s ease;
+   background: white;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
 
 
@@ -200,17 +206,17 @@
     transition: opacity 1s ease, transform 1s ease;
   }
   .et-slide#formations .formations .formation-description h3.visible{
-    opacity: 0.7;
+    opacity: 1;
     transform: scaleX(1);
   }
 
   .et-slide#formations .formations .certificats .certificat-item{
     opacity: 0;
     transform: scale(0);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .et-slide#formations .formations .certificats .certificat-item.visible{
-    opacity: 0.9;
+    opacity: 1;
     transform: scale(1);
   }  
 
