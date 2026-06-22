@@ -19,6 +19,7 @@
   .et-slide#formations .formations .formation-description h3{
     margin: 20px 0;
     color: rgb(15, 23, 42);
+    font-weight: 500;
   }
 
   /* galerie */
@@ -222,9 +223,11 @@
 
   @media (max-width: 991px){
      /* Formations et Certifications */
-    /*  .et-slide#formations .formations .formation-description{
-      width: 40%;
-    } */
+    .et-slide#formations .formations .formation-description h3{
+      font-size: 1rem;
+            letter-spacing: 0rem;
+            line-height: 1.5rem;
+    }
     .et-slide#formations .formations .certificats{
      /*  width: 60%; */
       padding-left: 20px;

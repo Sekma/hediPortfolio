@@ -3,6 +3,7 @@
 .et-slide#portfolio h3{
     color: rgb(15, 23, 42);
  margin-bottom: 2em;
+    font-weight: 500;
 }
 .et-slide#portfolio h2.project-title{
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

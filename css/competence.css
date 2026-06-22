@@ -22,6 +22,11 @@
     color: rgb(15, 23, 42);
     font-family: "Roboto", serif;
     margin-top: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
   }
   .et-slide#competences h5{
       line-height: 1.3rem;
@@ -143,6 +148,11 @@
         .et-slide#competences{
             padding: 0 1.5rem;
         }
+        .et-slide#competences h3.intro{
+            font-size: 1rem;
+            letter-spacing: 0rem;
+            line-height: 1.5rem;
+        } 
         .et-slide#competences .technologies img{
             padding: 5px;
             width: 40px;

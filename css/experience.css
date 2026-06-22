@@ -8,6 +8,11 @@
 .et-slide#experiences h3.intro{
  margin: 20px auto;
  max-width: 900px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
 }
   .et-slide#experiences .experiences{
     display: flex;
@@ -185,9 +190,15 @@
           }
 
         @media (max-width: 991px){
+
             .et-slide#experiences{
                 padding: 0 1.5rem;
               }
+              .et-slide#experiences h3.intro{
+            font-size: 1rem;
+            letter-spacing: 0rem;
+            line-height: 1.5rem;
+            } 
                 .et-slide#experiences .experiences .experience{
                     width: 330px;
                 } 
