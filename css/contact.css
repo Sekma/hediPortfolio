@@ -25,6 +25,21 @@
     padding: 0 10rem;
     margin-bottom: 3rem;
 }
+
+ /****** animation ******/
+
+  .et-slide#contact h3{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .et-slide#contact h3.visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
 .et-slide#contact .contact-part-1 form{
     width: 500px;
 }
@@ -114,7 +129,7 @@ background-color: rgb(201, 14, 14);
 }
 /* part 2 */
 .et-slide#contact .contact-part-2{
-    background-color:rgba(37, 99, 235, 0.1);
+    background-color:rgb(37, 99, 235);
     padding: 20px;
     width: 100vw;
 }
@@ -122,13 +137,15 @@ background-color: rgb(201, 14, 14);
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-style: italic;
     font-weight: 500;
-    color: rgb(37, 99, 235);
+    color: rgb(255, 255, 255);
     font-size: x-small;
+    opacity: 0.8;
 }
 .et-slide#contact .contact-part-2 .createur a i{
-  color: rgb(37, 99, 235);
+  color: rgb(255, 255, 255);
     font-size: x-small;
     margin: 10px;
+    opacity: 0.8;
 }
 
 

@@ -226,7 +226,7 @@ $(document).ready(function () {
             }
         });
 // contents
-        $('.et-slide#profil h3').each(function () {
+        $('.et-slide#profil h3, .et-slide#competences h3.intro, .et-slide#experiences h3.intro, .et-slide#portfolio h3.intro, .et-slide#contact h3').each(function () {
             let top = $(this).offset().top + 50;
             let scrollBottom = $(window).scrollTop() + $(window).height();
 

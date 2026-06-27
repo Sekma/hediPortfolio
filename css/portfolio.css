@@ -5,6 +5,20 @@
  margin-bottom: 2em;
     font-weight: 500;
 }
+
+  /****** animation ******/
+
+  .et-slide#portfolio h3.intro{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .et-slide#portfolio h3.intro.visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
 .et-slide#portfolio h2.project-title{
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.7rem;

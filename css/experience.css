@@ -14,6 +14,21 @@
     letter-spacing: 0.1rem;
     line-height: 1.7rem;
 }
+
+  /****** animation ******/
+
+  .et-slide#experiences h3.intro{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .et-slide#experiences h3.intro.visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
   .et-slide#experiences .experiences{
     display: flex;
     justify-content: center;
